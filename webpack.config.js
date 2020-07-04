@@ -8,16 +8,32 @@ const isDev = process.env.NODE_ENV === 'development';
 
 const config = {
   entry: {
-    main: './src/index.js',
-    about: './src/about.js',
-    analytics: './src/analytics.js'
+    main: './src/js/index.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[chunkhash].js'
   },
+  resolve: {
+    modules: [
+      path.join(__dirname, '/'),
+      'node_modules'
+    ]
+  },
   module: {
     rules: [
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          'style-loader',
+          // Translates CSS into CommonJS
+          'css-loader',
+          // Compiles Sass to CSS
+          'sass-loader',
+
+        ],
+      },
       {
         test: /\.js$/,
         use: { loader: "babel-loader" },
@@ -66,25 +82,15 @@ const config = {
       canPrint: true
     }),
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './src/pages/index.html',
       filename: 'index.html',
       chunks: ['main']
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/about.html',
-      filename: 'about.html',
-      chunks: ['about']
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/analytics.html',
-      filename: 'analytics.html',
-      chunks: ['analytics']
     }),
     new WebpackMd5Hash(),
   ]
 };
 
-module.exports = (env, argv) => {
+module.exports = () => {
 
     return config
 };

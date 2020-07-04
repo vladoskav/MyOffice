@@ -1,0 +1,15 @@
+.security {
+  padding: 100px 180px 100px 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  &__title {
+    max-width: 305px;
+    align-self: center;
+  }
+  &__left-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

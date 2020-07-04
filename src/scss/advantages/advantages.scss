@@ -1,0 +1,21 @@
+.advantages {
+  background-image: url("/src/images/advantages.jpg");
+  background-size: cover;
+  padding: 200px 150px 200px 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .advantages {
+    padding: 200px 50px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .advantages {
+    padding: 100px 15px;
+  }
+}

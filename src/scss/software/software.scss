@@ -1,0 +1,55 @@
+.software {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 180px 100px 180px;
+
+  &__title {
+    &:after {
+      content: "";
+      display: block;
+      margin: 0 auto 50px auto;
+      width: 80px;
+      padding-top: 24px;
+      border-bottom: 4px solid #ff9700;
+    }
+  }
+  &__grid {
+    display: flex;
+    margin: 0 auto 60px auto;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__button {
+    font-family: $font-family--montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: $color-white;
+    padding: 14px 81px 14px 81px;
+    background: $color-background-blue;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: 0;
+    max-width: 390px;
+    cursor: pointer;
+    margin: 0 auto;
+    &:focus {
+      outline: none;
+    }
+  }
+
+}
+@media screen and (max-width: 1024px) {
+  .software {
+    padding: 50px 50px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .software {
+    padding: 30px 15px;
+  }
+}
