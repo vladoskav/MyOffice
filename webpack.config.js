@@ -8,16 +8,31 @@ const isDev = process.env.NODE_ENV === 'development';
 
 const config = {
   entry: {
-    main: './src/index.js',
-    about: './src/about.js',
-    analytics: './src/analytics.js'
+    main: './src/js/index.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[chunkhash].js'
+    filename: '[name].[chunkhash].js',
+    publicPath: '/'
+  },
+  resolve: {
+    modules: [
+      path.join(__dirname, '/'),
+      'node_modules'
+    ]
   },
   module: {
     rules: [
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
+          'css-loader',
+            'resolve-url-loader',
+          'sass-loader',
+
+        ],
+      },
       {
         test: /\.js$/,
         use: { loader: "babel-loader" },
@@ -48,9 +63,19 @@ const config = {
         ]
       },
       {
-        test: /\.(eot|ttf|woff|woff2)$/,
-        loader: 'file-loader?name=./vendor/[name].[ext]'
-      }
+        test: /\.(eot|ttf|woff|woff2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        use: [
+          {
+            loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'fonts/',
+            esModule: false,
+          }
+
+          }
+        ]
+      },
     ]
   },
   plugins: [
@@ -66,25 +91,15 @@ const config = {
       canPrint: true
     }),
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './src/pages/index.html',
       filename: 'index.html',
       chunks: ['main']
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/about.html',
-      filename: 'about.html',
-      chunks: ['about']
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/analytics.html',
-      filename: 'analytics.html',
-      chunks: ['analytics']
     }),
     new WebpackMd5Hash(),
   ]
 };
 
-module.exports = (env, argv) => {
+module.exports = () => {
 
     return config
 };

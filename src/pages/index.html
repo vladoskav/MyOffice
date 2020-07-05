@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Сайт компании Мой Офис">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="<%=require('src/images/logo.svg')%>">
+    <title>Мой Офис</title>
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.scss %>">
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="header__upper-menu">
+                <div class="header__logo">
+                    <img alt="лого сайта" class="header__logo-image" src="<%=require('src/images/logo.svg')%>">
+                    <a href="index.html" class="header__logo-text">мой офис</a>
+                </div>
+                <img class="burger-menu__button" src="<%=require('src/images/open-menu.svg')%>" alt="скрытое меню">
+                    <nav class="burger-menu">
+                        <ul class="burger-menu__list">
+                            <li class="burger-menu__element">
+                                <a class="nav-bar__link nav-bar__link_mini" href="tel: +7 (843) 202-21-40">
+                                    +7 (843) 202-21-40
+                                </a>
+                            </li>
+                            <li class="burger-menu__element">
+                                <a class="nav-bar__link nav-bar__link_mini" href="#">Начать работу</a>
+                            </li>
+                            <li class="burger-menu__element">
+                                <a class="nav-bar__link nav-bar__link_mini" href="#">Личный кабинет</a>
+                            </li>
+                            <li class="burger-menu__element">
+                                <a class="nav-bar__link nav-bar__link_mini" href="#">О нас</a>
+                            </li>
+                            <li class="burger-menu__element">
+                                <a class="nav-bar__link nav-bar__link_mini" href="#">Тарифы</a>
+                            </li>
+                            <li class="burger-menu__element">
+                                <a class="nav-bar__link nav-bar__link_mini" href="#">Возможности</a>
+                            </li>
+                            <li class="burger-menu__element">
+                                <a class="nav-bar__link nav-bar__link_mini" href="#">Партнёрам</a>
+                            </li>
+                            <li class="burger-menu__element">
+                                <a class="nav-bar__link nav-bar__link_mini" href="#">Инструкции и поддержка</a>
+                            </li>
+                            <li class="burger-menu__element">
+                                <a class="nav-bar__link nav-bar__link_mini" href="#">Частые вопросы</a>
+                            </li>
+                        </ul>
+                    </nav>
+                <a href="tel: +7 (843) 202-21-40" class="header__phone">+7 (843) 202-21-40</a>
+                <button class="header__start-button">Начать работу</button>
+                <button class="header__lk-button">Личный кабинет</button>
+            </div>
+            <nav class="nav-bar">
+                <ul class="nav-bar__list">
+                    <li class="nav-bar__element">
+                        <a class="nav-bar__link">О нас</a>
+                    </li>
+                    <li class="nav-bar__element">
+                        <a class="nav-bar__link">Тарифы</a>
+                    </li>
+                    <li class="nav-bar__element">
+                        <a class="nav-bar__link">Возможности</a>
+                    </li>
+                    <li class="nav-bar__element">
+                        <a class="nav-bar__link">Партрнёрам</a>
+                    </li>
+                    <li class="nav-bar__element">
+                        <a class="nav-bar__link">Инструкции и поддержка</a>
+                    </li>
+                    <li class="nav-bar__element">
+                        <a class="nav-bar__link">Частые вопросы</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="rent">
+                <div class="rent__text-block">
+                    <h1 class="rent__title">аренда программ 1c&nbsp;предприятие</h1>
+                    <p class="rent__description">
+                        Подключайтесь за&nbsp;1&nbsp;минуту
+                        и&nbsp;работайте с&nbsp;привычными программами 1С
+                        через Интернет в&nbsp;любое время и&nbsp;в&nbsp;любом месте
+                    </p>
+                    <ul class="rent__list">
+                        <li class="rent__element">
+                            <img alt="галочка" src="<%=require('src/images/checked.svg')%>">
+                            &nbsp;От 960 рублей в месяц
+                        </li>
+                        <li class="rent__element">
+                            <img alt="галочка" src="<%=require('src/images/checked.svg')%>">
+                            &nbsp;12 лет на рынке
+                        </li>
+                        <li class="rent__element">
+                            <img alt="галочка" src="<%=require('src/images/checked.svg')%>">
+                            &nbsp;Автообновление программ 1C
+                        </li>
+                    </ul>
+                    <button class="rent__try-button">Попробовать 7 дней бесплатно</button>
+                </div>
+                <img class="rent__image" src="<%=require('src/images/cloud.jpg')%>" alt="облако с компьютером">
+                <img class="rent__cloud-1" src="<%=require('src/images/lil_cloud.svg')%>">
+            </section>
+            <section class="software">
+                <h2 class="section-title software__title">типовые программы 1c</h2>
+                <div class="software__grid">
+                    <div class="card">
+                        <h3 class="card__title">1с: управление нашей фирмой</h3>
+                        <p class="card__description">
+                            Торговля и&nbsp;склад, услуги и&nbsp;работы, закупки и&nbsp;резервы,
+                            банк и&nbsp;касса, кадры и&nbsp;расчет зарплаты, производство и
+                            сборочные операции, аналитические отчеты и&nbsp;CRM
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title"> 1С: Зарплата и управление персоналом</h3>
+                        <p class="card__description">
+                            Автоматизация задач,
+                            связанных с&nbsp;расчетом заработной платы персонала
+                            и&nbsp;реализацией кадровой политики
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">1С: Управление торговлей</h3>
+                        <p class="card__description">
+                            Позволяет автоматизировать задачи
+                            оперативного и&nbsp;управленческого учета,
+                            анализа и&nbsp;планирования торговых операций
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">1С: Бухгалтерия предприятия</h3>
+                        <p class="card__description">
+                            Профессиональный инструмент бухгалтера.
+                            С&nbsp;его помощью можно вести бухгалтерский и&nbsp;налоговый учет,
+                            готовить и&nbsp;сдавать обязательную отчетность
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">1С: Садовод</h3>
+                        <p class="card__description">
+                            Автоматизация бухгалтерского и&nbsp;налогового учета,
+                            включая подготовку обязательной отчетности в&nbsp;
+                            садоводческих некоммерческих товариществах (СНТ)
+                        </p>
+                    </div>
+                </div>
+                <button class="software__button">Узнать подробнее</button>
+            </section>
+            <section class="advantages">
+                <h2 class="section-title advantages__title">преимущества сервиса</h2>
+                <ul class="grid-list">
+                    <li class="grid-list__element">
+                        <img alt="иконка ракеты" class="grid-list__icon" src="<%=require('src/images/rocket.svg')%>">
+                        <div class="grid-list__text-block">
+                            <h3 class="grid-list__title">Быстрый старт</h3>
+                            <p class="grid-list__description">
+                                Для начала работы достаточно подключиться к&nbsp;системе.
+                                Это займёт не&nbsp;более 1&nbsp;минуты
+                            </p>
+                        </div>
+                    </li>
+                    <li class="grid-list__element">
+                        <img alt="иконка группы людей" class="grid-list__icon" src="<%=require('src/images/work.svg')%>">
+                        <div class="grid-list__text-block">
+                            <h3 class="grid-list__title">Совместная работа</h3>
+                            <p class="grid-list__description">
+                                Работа с&nbsp;другими сотрудниками в&nbsp;режиме реального времени
+                            </p>
+                        </div>
+                    </li>
+                    <li class="grid-list__element">
+                        <img alt="иконка лицензии" class="grid-list__icon" src="<%=require('src/images/license.svg')%>">
+                        <div class="grid-list__text-block">
+                            <h3 class="grid-list__title">Предустановленная лицензия</h3>
+                            <p class="grid-list__description">
+                                Вам не&nbsp;придётся покупать лицензию.
+                                Для начала работы достаточно войти в&nbsp;систему
+                            </p>
+                        </div>
+                    </li>
+                    <li class="grid-list__element">
+                        <img alt="иконка глобуса" class="grid-list__icon" src="<%=require('src/images/world.svg')%>">
+                        <div class="grid-list__text-block">
+                            <h3 class="grid-list__title">Доступ из любой точки мира</h3>
+                            <p class="grid-list__description">
+                                Ведение всех видов учётов онлайн
+                                из&nbsp;любой точки мира в&nbsp;любое время
+                            </p>
+                        </div>
+                    </li>
+                    <li class="grid-list__element">
+                        <img alt="иконка сервера" class="grid-list__icon" src="<%=require('src/images/safety.svg')%>">
+                        <div class="grid-list__text-block">
+                            <h3 class="grid-list__title">Защищённость</h3>
+                            <p class="grid-list__description">
+                                Безопасное хранилище для ваших файлов,
+                                доступ к&nbsp;которому вы&nbsp;можете получить отовсюду
+                            </p>
+                        </div>
+                    </li>
+                    <li class="grid-list__element">
+                        <img alt="иконка копилки" class="grid-list__icon" src="<%=require('src/images/help.svg')%>">
+                        <div class="grid-list__text-block">
+                            <h3 class="grid-list__title">Помогаем экономить</h3>
+                            <p class="grid-list__description">
+                                Не&nbsp;нужно оплачивать серверное оборудование,
+                                ПО&nbsp;и&nbsp;обслуживание
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="security">
+                <div class="security__left-block">
+                    <h2 class="section-title security__title">мы&nbsp;заботимся о&nbsp;безопасности ваших данных</h2>
+                    <img alt="компьютер и сервер" class="security__image" src="<%=require('src/images/security.jpg')%>">
+                </div>
+                <ul class="security__right-block">
+                    <li class="grid-list__element">
+                        <img src="<%=require('src/images/list.svg')%>" alt="иконка листа" class="security__icon">
+                        <div class="grid-list__text-block">
+                            <h3 class="grid-list__title">Ежедневная архивация</h3>
+                            <p class="grid-list__description">
+                                Глубина архивации: 14&nbsp;дней + обязательная копия на&nbsp;начало месяца
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
