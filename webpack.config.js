@@ -24,14 +24,27 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.scss$/i,
         use: [
-          (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
-          'css-loader',
-            'resolve-url-loader',
-          'sass-loader',
-
-        ],
+          {
+            loader: (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
+          },
+          {
+            loader: 'css-loader'
+          },
+          {
+            loader: 'resolve-url-loader',
+            options: {
+              keepQuery: true
+            }
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true
+            }
+          }
+        ]
       },
       {
         test: /\.js$/,

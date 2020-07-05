@@ -1,5 +1,5 @@
 .security {
-  padding: 100px 180px 100px 180px;
+  padding: 100px 150px 100px 150px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -8,16 +8,66 @@
     align-self: center;
     text-align: start;
     padding-top: 60px;
+    margin: 0;
   }
   &__left-block {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: 100px;
+  }
+  &__right-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+  &__image {
+    max-width: 531px;
+    align-self: center;
   }
   &__icon {
     width: 20px;
     height: 20px;
     margin-right: 20px;
-    padding-top: 5px;
+    padding-top: 2px;
+  }
+  &__right-element {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: $screen-w--l) {
+  .security {
+    padding: 50px 50px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .security {
+    flex-direction: column;
+    &__left-block {
+      margin-right: 0;
+    }
+    &__right-block {
+      align-self: center;
+    }
+  }
+}
+@media screen and (max-width: $screen-w--xs) {
+  .security {
+    &__image {
+      max-width: 250px;
+      margin-bottom: 50px;
+    }
+    &__title {
+      font-size: 18px;
+      line-height: 1.1;
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: $screen-w--xxs) {
+  .security {
+    padding: 50px 15px;
   }
 }
