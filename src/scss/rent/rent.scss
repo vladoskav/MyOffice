@@ -3,6 +3,7 @@
   flex-direction: row;
   justify-content: center;
   padding: 100px 180px 200px 180px;
+  align-items: center;
   &__title {
     font-family: $font-family--montserrat;
     font-style: normal;
@@ -53,7 +54,7 @@
     flex-direction: column;
   }
   &__image {
-    max-width: 500px;
+    max-width: 600px;
     height: auto;
     align-self: center;
   }
@@ -72,6 +73,13 @@
     border: 0;
     max-width: 390px;
     cursor: pointer;
+    transition: all .3s linear;
+    &:hover {
+      background: $color-white;
+      color: $color-dark-blue;
+      border: 0 solid $color-background-blue;
+      transition: all .3s linear;
+    }
     &:focus {
       outline: none;
     }
@@ -81,7 +89,7 @@
   .rent {
     justify-content: space-evenly;
     &__image {
-      max-width: 600px;
+      max-width: 762px;
     }
   }
 }
@@ -90,7 +98,7 @@
     padding: 50px 50px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
   .rent {
     justify-content: center;
     &__image {

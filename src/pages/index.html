@@ -17,7 +17,21 @@
                     <img alt="лого сайта" class="header__logo-image" src="<%=require('src/images/logo.svg')%>">
                     <a href="index.html" class="header__logo-text">мой офис</a>
                 </div>
-                <p class="header__phone">+7 (843) 202-21-40</p>
+                <img class="burger-menu__button" src="<%=require('src/images/open-menu.svg')%>" alt="скрытое меню">
+                    <nav class="burger-menu">
+                        <ul class="burger-menu__list">
+                            <li class="burger-menu__element"><a class="nav-bar__link nav-bar__link_mini" href="tel: +7 (843) 202-21-40">Позвонить</a></li>
+                            <li class="burger-menu__element"><a class="nav-bar__link nav-bar__link_mini" href="#">Начать работу</a></li>
+                            <li class="burger-menu__element"><a class="nav-bar__link nav-bar__link_mini" href="#">Личный кабинет</a></li>
+                            <li class="burger-menu__element"><a class="nav-bar__link nav-bar__link_mini" href="#">О нас</a></li>
+                            <li class="burger-menu__element"><a class="nav-bar__link nav-bar__link_mini" href="#">Тарифы</a></li>
+                            <li class="burger-menu__element"><a class="nav-bar__link nav-bar__link_mini" href="#">Возможности</a></li>
+                            <li class="burger-menu__element"><a class="nav-bar__link nav-bar__link_mini" href="#">Партнёрам</a></li>
+                            <li class="burger-menu__element"><a class="nav-bar__link nav-bar__link_mini" href="#">Инструкции и поддержка</a></li>
+                            <li class="burger-menu__element"><a class="nav-bar__link nav-bar__link_mini" href="#">Частые вопросы</a></li>
+                        </ul>
+                    </nav>
+                <a href="tel: +7 (843) 202-21-40" class="header__phone">+7 (843) 202-21-40</a>
                 <button class="header__start-button">Начать работу</button>
                 <button class="header__lk-button">Личный кабинет</button>
             </div>
@@ -69,7 +83,7 @@
                     </ul>
                     <button class="rent__try-button">Попробовать 7 дней бесплатно</button>
                 </div>
-                <img class="rent__image" src="<%=require('src/images/cloud.png')%>" alt="облако с компьютером">
+                <img class="rent__image" src="<%=require('src/images/cloud.jpg')%>" alt="облако с компьютером">
                 <img class="rent__cloud-1" src="<%=require('src/images/lil_cloud.svg')%>">
             </section>
             <section class="software">
@@ -132,7 +146,7 @@
                         </div>
                     </li>
                     <li class="grid-list__element">
-                        <img alt="иконка ракеты" class="grid-list__icon" src="<%=require('src/images/rocket.svg')%>">
+                        <img alt="иконка ракеты" class="grid-list__icon" src="<%=require('src/images/work.svg')%>">
                         <div class="grid-list__text-block">
                             <h3 class="grid-list__title">Совместная работа</h3>
                             <p class="grid-list__description">
@@ -141,7 +155,7 @@
                         </div>
                     </li>
                     <li class="grid-list__element">
-                        <img alt="иконка ракеты" class="grid-list__icon" src="<%=require('src/images/rocket.svg')%>">
+                        <img alt="иконка ракеты" class="grid-list__icon" src="<%=require('src/images/license.svg')%>">
                         <div class="grid-list__text-block">
                             <h3 class="grid-list__title">Предустановленная лицензия</h3>
                             <p class="grid-list__description">
@@ -151,7 +165,7 @@
                         </div>
                     </li>
                     <li class="grid-list__element">
-                        <img alt="иконка ракеты" class="grid-list__icon" src="<%=require('src/images/rocket.svg')%>">
+                        <img alt="иконка ракеты" class="grid-list__icon" src="<%=require('src/images/world.svg')%>">
                         <div class="grid-list__text-block">
                             <h3 class="grid-list__title">Доступ из любой точки мира</h3>
                             <p class="grid-list__description">
@@ -161,7 +175,7 @@
                         </div>
                     </li>
                     <li class="grid-list__element">
-                        <img alt="иконка ракеты" class="grid-list__icon" src="<%=require('src/images/rocket.svg')%>">
+                        <img alt="иконка ракеты" class="grid-list__icon" src="<%=require('src/images/safety.svg')%>">
                         <div class="grid-list__text-block">
                             <h3 class="grid-list__title">Защищённость</h3>
                             <p class="grid-list__description">
@@ -171,7 +185,7 @@
                         </div>
                     </li>
                     <li class="grid-list__element">
-                        <img alt="иконка ракеты" class="grid-list__icon" src="<%=require('src/images/rocket.svg')%>">
+                        <img alt="иконка ракеты" class="grid-list__icon" src="<%=require('src/images/help.svg')%>">
                         <div class="grid-list__text-block">
                             <h3 class="grid-list__title">Помогаем экономить</h3>
                             <p class="grid-list__description">
