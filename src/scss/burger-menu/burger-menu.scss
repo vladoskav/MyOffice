@@ -25,6 +25,9 @@
   &__element {
     list-style-type: none;
     margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 @media screen and (max-width: 950px) {

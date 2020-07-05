@@ -6,10 +6,18 @@
   &__title {
     max-width: 305px;
     align-self: center;
+    text-align: start;
+    padding-top: 60px;
   }
   &__left-block {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    padding-top: 5px;
   }
 }

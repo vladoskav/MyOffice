@@ -12,7 +12,8 @@ const config = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[chunkhash].js'
+    filename: '[name].[chunkhash].js',
+    publicPath: '/'
   },
   resolve: {
     modules: [
@@ -25,11 +26,9 @@ const config = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-          // Creates `style` nodes from JS strings
-          'style-loader',
-          // Translates CSS into CommonJS
+          (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
           'css-loader',
-          // Compiles Sass to CSS
+            'resolve-url-loader',
           'sass-loader',
 
         ],
@@ -64,9 +63,19 @@ const config = {
         ]
       },
       {
-        test: /\.(eot|ttf|woff|woff2)$/,
-        loader: 'file-loader?name=./vendor/[name].[ext]'
-      }
+        test: /\.(eot|ttf|woff|woff2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        use: [
+          {
+            loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'fonts/',
+            esModule: false,
+          }
+
+          }
+        ]
+      },
     ]
   },
   plugins: [

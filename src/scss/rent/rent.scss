@@ -73,12 +73,12 @@
     border: 0;
     max-width: 390px;
     cursor: pointer;
-    transition: all .3s linear;
+    transition: all .2s linear;
     &:hover {
       background: $color-white;
       color: $color-dark-blue;
       border: 0 solid $color-background-blue;
-      transition: all .3s linear;
+      transition: all .2s linear;
     }
     &:focus {
       outline: none;
