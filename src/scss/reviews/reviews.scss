@@ -1,6 +1,33 @@
 .reviews {
-  background:
-          linear-gradient(180deg, #F8F8F8 0%, #84B7EA 48.67%,
-                  rgba(248, 248, 248, 0) 101.58%);
-  height: 1000px;
+  position: relative;
+  padding: 100px 150px 100px 150px;
+  &__title {
+    margin-bottom: 75px;
+  }
+  &__content {
+    position: relative;
+    z-index: 4;
+  }
+  &__background {
+      background:
+            linear-gradient(180deg, #F8F8F8 0%, #84B7EA 48.67%,
+                    rgba(248, 248, 248, 0) 101.58%);
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: -300px;
+      bottom: 0;
+      height: 200%;
+      z-index: 0;
+  }
+}
+@media screen and (max-width: $screen-w--l) {
+  .reviews {
+    padding: 50px 50px;
+  }
+}
+@media screen and (max-width: $screen-w--xxs) {
+  .reviews {
+    padding: 50px 15px;
+  }
 }

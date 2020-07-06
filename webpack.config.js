@@ -12,14 +12,21 @@ const config = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[chunkhash].js',
-    publicPath: '/'
+    filename: '[name].js',
+    publicPath: './'
   },
   resolve: {
     modules: [
       path.join(__dirname, '/'),
       'node_modules'
     ]
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    writeToDisk: true,
+    open: true,
+
   },
   module: {
     rules: [
