@@ -77,6 +77,16 @@
     }
   }
 }
+@media screen and (max-width: $screen-w--m) {
+  .footer {
+    &__bottom-link {
+      margin-right: 15px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
 @media screen and (max-width: $screen-w--sx) {
   .footer {
     &__4-blocks {
