@@ -29,7 +29,7 @@
                                 <a class="nav-bar__link nav-bar__link_mini" href="#">Начать работу</a>
                             </li>
                             <li class="burger-menu__element">
-                                <a class="nav-bar__link nav-bar__link_mini" href="#">Личный кабинет</a>
+                                <a class="nav-bar__link nav-bar__link_mini nav-bar__link_lk" href="#">Личный кабинет</a>
                             </li>
                             <li class="burger-menu__element">
                                 <a class="nav-bar__link nav-bar__link_mini" href="#">О нас</a>
@@ -80,6 +80,9 @@
         </header>
         <main class="main">
             <section class="rent">
+                <img class="cloud__1" src="<%=require('src/images/clouds/cloud1.svg')%>">
+                <img class="cloud__2" src="<%=require('src/images/clouds/cloud2.svg')%>">
+                <img class="cloud__3" src="<%=require('src/images/clouds/cloud3.svg')%>">
                 <div class="rent__text-block">
                     <h1 class="rent__title">аренда программ 1c&nbsp;предприятие</h1>
                     <p class="rent__description">
@@ -104,9 +107,14 @@
                     <button class="rent__try-button">Попробовать 7 дней бесплатно</button>
                 </div>
                 <img class="rent__image" src="<%=require('src/images/cloud.jpg')%>" alt="облако с компьютером">
-                <img class="rent__cloud-1" src="<%=require('src/images/lil_cloud.svg')%>">
             </section>
             <section class="software">
+                <img class="cloud__4" src="<%=require('src/images/clouds/cloud4.svg')%>">
+                <img class="cloud__5" src="<%=require('src/images/clouds/cloud5.svg')%>">
+                <img class="stars__1" src="<%=require('src/images/clouds/star1.svg')%>">
+                <img class="stars__2" src="<%=require('src/images/clouds/star2.svg')%>">
+                <img class="stars__3" src="<%=require('src/images/clouds/star8.svg')%>">
+                <img class="cloud__6" src="<%=require('src/images/clouds/cloud6.svg')%>">
                 <h2 class="section-title software__title">типовые программы 1c</h2>
                 <div class="software__grid">
                     <div class="card">
@@ -217,12 +225,16 @@
                 </ul>
             </section>
             <section class="security">
+                <img class="cloud__7" src="<%=require('src/images/clouds/cloud7.svg')%>">
+                <img class="cloud__8" src="<%=require('src/images/clouds/cloud16.svg')%>">
+                <img class="stars__4" src="<%=require('src/images/clouds/star4.svg')%>">
+                <img class="cloud__9" src="<%=require('src/images/clouds/cloud8.svg')%>">
                 <div class="security__left-block">
                     <h2 class="section-title security__title">мы&nbsp;заботимся о&nbsp;безопасности ваших данных</h2>
                     <img alt="компьютер и сервер" class="security__image" src="<%=require('src/images/security.jpg')%>">
                 </div>
                 <ul class="security__right-block">
-                    <li class="grid-list__element">
+                    <li class="grid-list__element security__right-element">
                         <img src="<%=require('src/images/list.svg')%>" alt="иконка листа" class="security__icon">
                         <div class="grid-list__text-block">
                             <h3 class="grid-list__title">Ежедневная архивация</h3>
@@ -231,9 +243,308 @@
                             </p>
                         </div>
                     </li>
+                    <li class="grid-list__element security__right-element">
+                        <img src="<%=require('src/images/list.svg')%>" alt="иконка листа" class="security__icon">
+                        <div class="grid-list__text-block">
+                            <h3 class="grid-list__title">Использование SSL-протокола</h3>
+                            <p class="grid-list__description">
+                                Это обеспечивает безопасность обмена данными между вашим компьютером и&nbsp;сервером
+                            </p>
+                        </div>
+                    </li>
+                    <li class="grid-list__element security__right-element">
+                        <img src="<%=require('src/images/list.svg')%>" alt="иконка листа" class="security__icon">
+                        <div class="grid-list__text-block">
+                            <h3 class="grid-list__title">Надёжный дата-центр</h3>
+                            <p class="grid-list__description">
+                                Дата-центр находится под круглосуточной охраной и&nbsp;видеонаблюдением.
+                                Сервис доступен 99,7% времени
+                            </p>
+                        </div>
+                    </li>
+                    <li class="grid-list__element security__right-element">
+                        <img src="<%=require('src/images/list.svg')%>" alt="иконка листа" class="security__icon">
+                        <div class="grid-list__text-block">
+                            <h3 class="grid-list__title">Постоянный мониторинг работоспособности</h3>
+                            <p class="grid-list__description">
+                                Наши системные администраторы ежедневно следят за&nbsp;работой
+                                оборудования и&nbsp;программного обеспечения
+                            </p>
+                        </div>
+                    </li>
                 </ul>
             </section>
+            <section class="start-work">
+                <img class="cloud__10" src="<%=require('src/images/clouds/cloud9.svg')%>">
+                <img class="stars__5" src="<%=require('src/images/clouds/star5.svg')%>">
+                <img class="stars__6" src="<%=require('src/images/clouds/star9.svg')%>">
+                <img class="cloud__11" src="<%=require('src/images/clouds/cloud10.svg')%>">
+                <img class="cloud__12" src="<%=require('src/images/clouds/cloud11.svg')%>">
+                <h2 class="section-title start-work__title">Начать работу в&nbsp;&laquo;мой офис&raquo; просто!</h2>
+                <div class="start-work__container">
+                    <img src="<%=require('src/images/startwork.jpg')%>"
+                         alt="облако с сервером и компьюетром"
+                         class="security__image">
+                    <div class="start-work__right-block">
+                        <div class="start-work__image-container">
+                            <img class="start-work__icon" src="<%=require('src/images/registration.svg')%>">
+                            <img class="start-work__icon" src="<%=require('src/images/download.svg')%>">
+                            <img class="start-work__icon" src="<%=require('src/images/start.svg')%>">
+                            <img class="start-work__line" src="<%=require('src/images/line.svg')%>">
+                        </div>
+                        <ul class="security__right-block">
+                            <li class="grid-list__element start-work__element security__right-element">
+                                <div class="grid-list__text-block">
+                                    <h3 class="grid-list__title">1. зарегистрируйтесь</h3>
+                                    <p class="grid-list__description">
+                                        Регистрация бесплатна! Вам нужен только email и&nbsp;телефон
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="grid-list__element start-work__element security__right-element">
+                                <div class="grid-list__text-block">
+                                    <h3 class="grid-list__title">2. Скачайте программу</h3>
+                                    <p class="grid-list__description">
+                                        На&nbsp;ваш e-mail придёт ссылка для входа в&nbsp;личный кабинет,
+                                        где вы&nbsp;можете скачать программу
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="grid-list__element start-work__element security__right-element">
+                                <div class="grid-list__text-block">
+                                    <h3 class="grid-list__title">3. Начните работу</h3>
+                                    <p class="grid-list__description">
+                                        Запустите программу и&nbsp;начните работу. Первые 7&nbsp;дней бесплатно!
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="software__button">Узнать подробнее</button>
+            </section>
+            <section class="reviews">
+                <div class="reviews__background"></div>
+                <div class="reviews__content">
+                    <img class="cloud__13" src="<%=require('src/images/clouds/cloud12.svg')%>">
+                    <h2 class="section-title reviews__title">отзывы наших клиентов</h2>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-card">
+                                    <div class="swiper-card__wrapper">
+                                        <img class="swiper-card__icon" src="<%=require('src/images/quote.svg')%>" alt="ковычки">
+                                        <h3 class="swiper-card__title">горбунов руслан</h3>
+                                        <p class="swiper-card__author">Директор РА "Brana Sabina"</p>
+                                        <p class="swiper-card__description">
+                                            1С - спецпрограмма и ее настройка и/или установка — дело рук профессионалов.
+                                            Уже сколько раз в офисе переустанавливали Windows, меняли компьютеры, а с 1С все в порядке.
+                                            Даже настраивать ничего не нужно. Очень радует, что все программы теперь у нас лицензионные.
+                                            И с обновлениями 1С нет проблем — все устанавливается своевременно.
+                                            Мы довольны вашей работой, продолжайте в том же духе!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-card">
+                                    <div class="swiper-card__wrapper">
+                                        <img class="swiper-card__icon" src="<%=require('src/images/quote.svg')%>" alt="ковычки">
+                                        <h3 class="swiper-card__title">горбунов руслан</h3>
+                                        <p class="swiper-card__author">Директор РА "Brana Sabina"</p>
+                                        <p class="swiper-card__description">
+                                            1С - спецпрограмма и ее настройка и/или установка — дело рук профессионалов.
+                                            Уже сколько раз в офисе переустанавливали Windows, меняли компьютеры, а с 1С все в порядке.
+                                            Даже настраивать ничего не нужно. Очень радует, что все программы теперь у нас лицензионные.
+                                            И с обновлениями 1С нет проблем — все устанавливается своевременно.
+                                            Мы довольны вашей работой, продолжайте в том же духе!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-card">
+                                    <div class="swiper-card__wrapper">
+                                        <img class="swiper-card__icon" src="<%=require('src/images/quote.svg')%>" alt="ковычки">
+                                        <h3 class="swiper-card__title">горбунов руслан</h3>
+                                        <p class="swiper-card__author">Директор РА "Brana Sabina"</p>
+                                        <p class="swiper-card__description">
+                                            1С - спецпрограмма и ее настройка и/или установка — дело рук профессионалов.
+                                            Уже сколько раз в офисе переустанавливали Windows, меняли компьютеры, а с 1С все в порядке.
+                                            Даже настраивать ничего не нужно. Очень радует, что все программы теперь у нас лицензионные.
+                                            И с обновлениями 1С нет проблем — все устанавливается своевременно.
+                                            Мы довольны вашей работой, продолжайте в том же духе!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="customers">
+                <img class="cloud__14" src="<%=require('src/images/clouds/cloud13.svg')%>">
+                <img class="cloud__15" src="<%=require('src/images/clouds/cloud14.svg')%>">
+                <img class="cloud__16" src="<%=require('src/images/clouds/cloud14.svg')%>">
+                <img class="cloud__17" src="<%=require('src/images/clouds/cloud15.svg')%>">
+                <img class="stars__7" src="<%=require('src/images/clouds/star7.svg')%>">
+                <h2 class="section-title customers__title">наши клиенты:</h2>
+                <div class="customers__list">
+                    <div class="customers__block">
+                        <img class="customers__logo"
+                             src="<%=require('src/images/mullar.svg')%>"
+                             alt="лого компании муллар">
+                    </div>
+                    <div class="customers__block">
+                        <img class="customers__logo"
+                             src="<%=require('src/images/toys.svg')%>"
+                             alt="лого компании муллар">
+                    </div>
+                    <div class="customers__block">
+                        <img class="customers__logo"
+                             src="<%=require('src/images/ferex.svg')%>"
+                             alt="лого компании муллар">
+                    </div>
+                    <div class="customers__block">
+                        <img class="customers__logo"
+                             src="<%=require('src/images/fest.svg')%>"
+                             alt="лого компании муллар">
+                    </div>
+                    <div class="customers__block">
+                        <img class="customers__logo"
+                             src="<%=require('src/images/congress.svg')%>"
+                             alt="лого компании муллар">
+                    </div>
+                    <div class="customers__block">
+                        <img class="customers__logo"
+                             src="<%=require('src/images/maximus.svg')%>"
+                             alt="лого компании муллар">
+                    </div>
+                    <div class="customers__block">
+                        <img class="customers__logo"
+                             src="<%=require('src/images/suvarstroit.svg')%>"
+                             alt="лого компании муллар">
+                    </div>
+                    <div class="customers__block">
+                        <img class="customers__logo"
+                             src="<%=require('src/images/arbitre.svg')%>"
+                             alt="лого компании муллар">
+                    </div>
+                </div>
+            </section>
         </main>
+        <footer class="footer">
+            <div class="footer__logo">
+                <img alt="лого сайта" class="footer__logo-image" src="<%=require('src/images/logo.svg')%>">
+                <a href="index.html" class="footer__logo-text">мой офис</a>
+            </div>
+            <div class="footer__4-blocks">
+                <div class="footer-text-block">
+                    <h3 class="footer-text-block__title">Контакты</h3>
+                    <ul class="footer-text-block__list">
+                        <li class="footer-text-block__element">
+                            <img class="footer-text-block__icon"
+                                 alt="иконка телефона"
+                                 src="<%=require('src/images/phone.svg')%>">
+                            <a class="footer-text-block__link" href="tel: +7 (843) 202-21-40">
+                                +7 (843) 202-21-40
+                            </a>
+                        </li>
+                        <li class="footer-text-block__element">
+                            <img class="footer-text-block__icon" alt="иконка почты" src="<%=require('src/images/mail.svg')%>">
+                            <a class="footer-text-block__link" href="mailto: support@moiofis.ru">support@moiofis.ru</a>
+                        </li>
+                        <li class="footer-text-block__element">
+                            <img class="footer-text-block__icon" alt="иконка метки" src="<%=require('src/images/marker.svg')%>">
+                            <a class="footer-text-block__link" href="https://goo.gl/maps/UG1xQmY7F3R5aGrX8" target="_blank">
+                                г. Казань, ул. Юлиуса Фучика, дом № 90А, помещение 419-420
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-text-block">
+                    <h3 class="footer-text-block__title">Компания</h3>
+                    <ul class="footer-text-block__list">
+                        <li class="footer-text-block__element">
+                            <a class="footer-text-block__link" href="#">Тарифы</a>
+                        </li>
+                        <li class="footer-text-block__element">
+                            <a class="footer-text-block__link" href="#">О нас</a>
+                        </li>
+                        <li class="footer-text-block__element">
+                            <a class="footer-text-block__link" href="#">Возможности</a>
+                        </li>
+                        <li class="footer-text-block__element">
+                            <a class="footer-text-block__link" href="#">Партнёрам</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-text-block">
+                    <h3 class="footer-text-block__title">Продукты</h3>
+                    <ul class="footer-text-block__list">
+                        <li class="footer-text-block__element">
+                            <a class="footer-text-block__link" href="#">1С: Бухгалтерия предприятия</a>
+                        </li>
+                        <li class="footer-text-block__element">
+                            <a class="footer-text-block__link" href="#">1С: Зарплата и управление персоналом</a>
+                        </li>
+                        <li class="footer-text-block__element">
+                            <a class="footer-text-block__link" href="#">1С: Управление торговлей</a>
+                        </li>
+                        <li class="footer-text-block__element">
+                            <a class="footer-text-block__link" href="#">1С: Управление нашей фирмой</a>
+                        </li>
+                        <li class="footer-text-block__element">
+                            <a class="footer-text-block__link" href="#">1С: Садовод</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-text-block">
+                    <h3 class="footer-text-block__title">Поддержка</h3>
+                    <ul class="footer-text-block__list">
+                        <li class="footer-text-block__element">
+                            <a class="footer-text-block__link" href="#">Часто задаваемы вопросы</a>
+                        </li>
+                        <li class="footer-text-block__element">
+                            <a class="footer-text-block__link" href="#">Инструкции</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="footer__bottom-block">
+                <li class="footer__bottom-block-element">
+                    <p class="footer__bottom-link">&copy; Все права защищены</p>
+                </li>
+                <li class="footer__bottom-block-element">
+                    <a href="#" class="footer__bottom-link">Политика конфиденциальности</a>
+                </li>
+                <li class="footer__bottom-block-element">
+                    <a href="#" class="footer__bottom-link">Временные файлы cookies</a>
+                </li>
+            </ul>
+        </footer>
+        <div class="modal">
+            <div class="popup">
+                <span class="popup__close"></span>
+                <h2 class="popup__title">Войти в личный кабинет</h2>
+                <form class="popup__form">
+                    <label class="popup__label">
+                        Логин
+                        <input class="popup__input">
+                    </label>
+                    <label class="popup__label">
+                        Пароль
+                        <input class="popup__input">
+                    </label>
+                    <label>
+                        <input class="popup__captcha" placeholder="Тут встраивается ReCaptcha">
+                    </label>
+                    <button class="popup__button">Войти</button>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>

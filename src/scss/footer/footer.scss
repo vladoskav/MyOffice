@@ -1,0 +1,110 @@
+.footer {
+  padding: 100px 250px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(105.17deg, #3685D7 0.12%, rgba(54, 133, 215, 0.81) 121.82%);
+  &__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+  &__bottom-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  &__bottom-link {
+    text-decoration: none;
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-white;
+    font-family: $font-family--montserrat;
+
+  }
+  &__bottom-block-element {
+    transition: opacity .2s linear;
+    &:hover {
+      opacity: .4;
+      transition: opacity .2s linear;
+    }
+  }
+  &__4-blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__logo-image {
+    margin-right: 18px;
+  }
+  &__logo-text {
+    font-family: $font-family--montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: $color-white;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+@media screen and (max-width: $screen-w--xxl) {
+  .footer {
+      padding: 80px 150px;
+    }
+
+}
+@media screen and (max-width: $screen-w--xl) {
+  .footer {
+    padding: 80px 100px;
+  }
+}
+@media screen and (max-width: $screen-w--l) {
+  .footer {
+    padding: 50px 100px;
+    justify-content: center;
+    &__4-blocks {
+      flex-wrap: wrap;
+    }
+  }
+}
+@media screen and (max-width: $screen-w--m) {
+  .footer {
+    &__bottom-link {
+      margin-right: 15px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: $screen-w--sx) {
+  .footer {
+    &__4-blocks {
+      flex-direction: column;
+    }
+    &__bottom-block {
+      flex-direction: column;
+    }
+    &__bottom-block-element {
+      margin-bottom: 30px;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: $screen-w--xxs) {
+  .footer {
+    padding: 30px 15px;
+  }
+}

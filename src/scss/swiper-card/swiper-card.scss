@@ -1,0 +1,90 @@
+.swiper-card {
+  position: relative;
+  background: transparent;
+  box-sizing: content-box;
+  padding: 35px 90px;
+  max-width: 750px;
+  margin: 0 auto;
+  &__wrapper {
+    background: $color-white;
+    border: 1px solid #E5E5E5;
+    box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    padding: 35px 90px;
+    max-width: 750px;
+    box-sizing: border-box;
+  }
+  &__icon {
+    position: absolute;
+    top: 0;
+    right: 125px;
+  }
+  &__title {
+    font-family: $font-family--montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $color-dark-blue;
+    margin: 0 0 8px 0;
+  }
+  &__author {
+    font-family: $font-family--montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color:$color-gray--d10;
+    margin: 0 0 40px 0;
+
+  }
+  &__description {
+    font-family: $font-family--montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color:$color-gray--d10;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .swiper-card {
+    padding: 16px 45px;
+    &__wrapper {
+      padding: 16px 45px;
+    }
+    &__icon {
+      position: absolute;
+      top: 0;
+      right: 64px;
+    }
+  }
+}
+@media screen and (max-width: $screen-w--s) {
+ .swiper-card {
+   padding: 16px;
+   &__wrapper {
+     padding: 16px;
+   }
+   &__icon {
+     width: 30px;
+     height: 30px;
+   }
+   &__title {
+     font-size: 16px;
+     line-height: 1.1;
+   }
+   &__author {
+     font-size: 12px;
+     line-height: 1.1;
+    margin-bottom: 20px;
+
+   }
+   &__description {
+     font-size: 12px;
+     line-height: 1.1;
+   }
+ }
+}

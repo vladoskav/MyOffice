@@ -12,8 +12,8 @@ const config = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[chunkhash].js',
-    publicPath: '/'
+    filename: '[name].js',
+    publicPath: './'
   },
   resolve: {
     modules: [
@@ -21,17 +21,37 @@ const config = {
       'node_modules'
     ]
   },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    writeToDisk: true,
+    open: true,
+
+  },
   module: {
     rules: [
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.scss$/i,
         use: [
-          (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
-          'css-loader',
-            'resolve-url-loader',
-          'sass-loader',
-
-        ],
+          {
+            loader: (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
+          },
+          {
+            loader: 'css-loader'
+          },
+          {
+            loader: 'resolve-url-loader',
+            options: {
+              keepQuery: true
+            }
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true
+            }
+          }
+        ]
       },
       {
         test: /\.js$/,
