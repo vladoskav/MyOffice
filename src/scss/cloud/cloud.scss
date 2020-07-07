@@ -1,0 +1,164 @@
+.cloud {
+  &__1 {
+    position: absolute;
+    top: 100px;
+    left: 115px;
+    z-index: 0;
+  }
+  &__2 {
+    position: absolute;
+    top: 430px;
+    left: 670px;
+    z-index: 0;
+  }
+  &__3 {
+    position: absolute;
+    top: 700px;
+    left: 1300px;
+    z-index: 0;
+  }
+  &__4 {
+    position: absolute;
+    top: 120px;
+    left: 190px;
+    z-index: 0;
+  }
+  &__5 {
+    position: absolute;
+    top: 130px;
+    right: 110px;
+    z-index: 0;
+  }
+  &__6 {
+    position: absolute;
+    bottom: 60px;
+    right: 90px;
+    z-index: 0;
+  }
+  &__7 {
+    position: absolute;
+    top: 20px;
+    left: 380px;
+    z-index: 0;
+  }
+  &__8 {
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    z-index: 0;
+  }
+  &__9 {
+    position: absolute;
+    bottom: 50px;
+    left: 350px;
+    z-index: 0;
+  }
+  &__10 {
+    position: absolute;
+    top: 250px;
+    right: 100px;
+    z-index: 0;
+  }
+  &__11 {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    z-index: 0;
+  }
+  &__12 {
+    position: absolute;
+    bottom: 100px;
+    left: 150px;
+    z-index: 0;
+  }
+  &__13 {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 0;
+  }
+  &__14 {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    z-index: 0;
+  }
+  &__15 {
+    position: absolute;
+    top: 350px;
+    right: 100px;
+    z-index: 0;
+  }
+  &__16 {
+    position: absolute;
+    bottom: 100px;
+    left: 900px;
+    z-index: 0;
+  }
+  &__17 {
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+    z-index: 0;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .cloud {
+    &__2 {
+      display: none;
+    }
+    &__3{
+      display: none;
+    }
+    &__15 {
+      display: none;
+    }
+    &__16 {
+      display: none;
+    }
+    &__17 {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .cloud {
+
+    &__1 {
+      display: none;
+    }
+    &__4 {
+      display: none;
+    }
+    &__5 {
+      display: none;
+    }
+    &__6 {
+      display: none;
+    }
+    &__7 {
+      display: none;
+    }
+    &__8 {
+      display: none;
+    }
+    &__9 {
+      display: none;
+    }
+    &__10 {
+      display: none;
+    }
+    &__11 {
+      display: none;
+    }
+    &__12 {
+      display: none;
+    }
+    &__13 {
+      display: none;
+    }
+    &__14 {
+      display: none;
+    }
+  }
+}

@@ -30,6 +30,14 @@
     }
   }
 }
+@media screen and (min-width: 950px) {
+  .burger-menu {
+    display: none;
+    &_opened {
+      display: none;
+    }
+  }
+}
 @media screen and (max-width: 950px) {
   .burger-menu {
     &__button {
