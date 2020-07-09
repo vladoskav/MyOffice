@@ -16,6 +16,7 @@
   }
   &__block {
     display: flex;
+    align-items: center;
     justify-content: center;
     background: $color-white;
     border: 1px solid #E5E5E5;
@@ -26,7 +27,35 @@
   }
   &__logo {
     max-width: 174px;
-    align-self: center;
+    max-height: 77px;
+    &_fest {
+      max-width: 115px;
+      max-height: 50px;
+    }
+    &_mullar {
+      max-width: 92px;
+      max-height: 66px;
+    }
+    &_ferex {
+      max-width: 140px;
+      max-height: 50px;
+    }
+    &_congress {
+      max-width: 154px;
+      max-height: 35px;
+    }
+    &_maximus {
+      max-width: 142px;
+      max-height: 40px;
+    }
+    &_suvarstroit {
+      max-width: 200px;
+      max-height: 22px;
+    }
+    &_arbitre {
+      max-width: 176px;
+      max-height: 52px;
+    }
   }
 }
 @media screen and (max-width: $screen-w--l) {

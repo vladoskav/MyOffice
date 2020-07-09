@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Сайт компании Мой Офис">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="<%=require('src/images/logo.svg')%>">
+    <title>Мой Офис</title>
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.scss %>">
+</head>
+<body>
+<div class="page">
+    <header class="header">
+        <div class="header__upper-menu">
+            <div class="header__logo">
+                <img alt="лого сайта" class="header__logo-image" src="<%=require('src/images/logo3.png')%>">
+                <a href="index.html" class="header__logo-text">мой офис</a>
+            </div>
+            <img class="burger-menu__button" src="<%=require('src/images/open-menu.svg')%>" alt="скрытое меню">
+            <nav class="burger-menu">
+                <ul class="burger-menu__list">
+                    <li class="burger-menu__element">
+                        <a class="nav-bar__link nav-bar__link_mini" href="tel: +7 (843) 202-21-40">
+                            +7 (843) 202-21-40
+                        </a>
+                    </li>
+                    <li class="burger-menu__element">
+                        <a class="nav-bar__link nav-bar__link_mini" href="#">Начать работу</a>
+                    </li>
+                    <li class="burger-menu__element">
+                        <a class="nav-bar__link nav-bar__link_mini nav-bar__link_lk" href="#">Личный кабинет</a>
+                    </li>
+                    <li class="burger-menu__element">
+                        <a class="nav-bar__link nav-bar__link_mini" href="#">О нас</a>
+                    </li>
+                    <li class="burger-menu__element">
+                        <a class="nav-bar__link nav-bar__link_mini" href="#">Тарифы</a>
+                    </li>
+                    <li class="burger-menu__element">
+                        <a class="nav-bar__link nav-bar__link_mini" href="advantages.html">Возможности</a>
+                    </li>
+                    <li class="burger-menu__element">
+                        <a class="nav-bar__link nav-bar__link_mini" href="#">Партнёрам</a>
+                    </li>
+                    <li class="burger-menu__element">
+                        <a class="nav-bar__link nav-bar__link_mini" href="#">Инструкции и поддержка</a>
+                    </li>
+                    <li class="burger-menu__element">
+                        <a class="nav-bar__link nav-bar__link_mini" href="#">Частые вопросы</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="tel: +7 (843) 202-21-40" class="header__phone">+7 (843) 202-21-40</a>
+            <button class="header__start-button">Начать работу</button>
+            <button class="header__lk-button">Личный кабинет</button>
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-bar__list">
+                <li class="nav-bar__element">
+                    <a class="nav-bar__link">О нас</a>
+                </li>
+                <li class="nav-bar__element">
+                    <a class="nav-bar__link">Тарифы</a>
+                </li>
+                <li class="nav-bar__element">
+                    <a class="nav-bar__link" href="advantages.html">Возможности</a>
+                </li>
+                <li class="nav-bar__element">
+                    <a class="nav-bar__link">Партрнёрам</a>
+                </li>
+                <li class="nav-bar__element">
+                    <a class="nav-bar__link">Инструкции и поддержка</a>
+                </li>
+                <li class="nav-bar__element">
+                    <a class="nav-bar__link">Частые вопросы</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main_2">
+        <section class="upper-block">
+            <img class="gear__1" src="<%=require('src/images/gears/gear1.svg')%>">
+            <img class="gear__2" src="<%=require('src/images/gears/gear2.svg')%>">
+            <img class="gear__3" src="<%=require('src/images/gears/gear3.svg')%>">
+            <img class="gear__4" src="<%=require('src/images/gears/gear4.svg')%>">
+            <h1 class="upper-block__title">возможности</h1>
+            <p class="upper-block__description">
+                Мой офис&nbsp;&mdash; это пакет услуг, позволяющий вам и&nbsp;вашим
+                сотрудникам работать с&nbsp;программами 1С&nbsp;и&nbsp;Microsoft Office в&nbsp;любое время,
+                любом месте и&nbsp;практически на&nbsp;любом устройстве.
+            </p>
+            <p class="upper-block__description">
+                В&nbsp;пакет входят сервисы:
+            </p>
+        </section>
+        <section class="advantages-section">
+            <img alt="бухгалтерия" class="advantages-section__image" src="<%=require('src/images/accounting.png')%>">
+            <div class="ac-block">
+                <h2 class="ac-block__title">1с бухгалтерия</h2>
+                <p class="ac-block__description">
+                    &laquo;Бухгалтерия предприятия&raquo;&nbsp;&mdash;
+                    это профессиональный инструмент бухгалтера, с&nbsp;помощью которого
+                    можно вести бухгалтерский и&nbsp;налоговый учет, готовить и
+                    &nbsp;сдавать обязательную отчетность.
+                </p>
+                <p class="ac-block__description">
+                    Понятный учет в&nbsp;соответствии с&nbsp;законодательством и&nbsp;потребностями бизнеса,
+                    экономия времени при расчетах налогов, оформлении документов и&nbsp;хозяйственных операций,
+                    поддержка пользователей в&nbsp;сочетании с&nbsp;высоким комфортом работы.
+                </p>
+                <ul class="ac-block__list">
+                    <li class="ac-block__element">Складской учёт</li>
+                    <li class="ac-block__element">Учёт заработной платы</li>
+                    <li class="ac-block__element">Учёт торговых операций</li>
+                    <li class="ac-block__element">Учёт производства</li>
+                    <li class="ac-block__element">Ведение учета нескольких организаций в одной базе</li>
+                    <li class="ac-block__element">Поддержка разных систем налогообложения – ОСНО, УСН, ЕНВД</li>
+                    <li class="ac-block__element">Учет основных средств и нематериальных активов</li>
+                    <li class="ac-block__element">
+                        Совместная работа с программами «Зарплата и управление
+                        персоналом» и «Управление торговлей»
+                    </li>
+                </ul>
+                <button class="ac-block__button">Запустить программу</button>
+            </div>
+        </section>
+        <section class="advantages-section advantages-section_left">
+            <div class="ac-block ac-block_left">
+                <h2 class="ac-block__title">1С Зарплата и управление персоналом</h2>
+                <p class="ac-block__description">
+                    1С:Зарплата и&nbsp;управление персоналом 8&Prime;&nbsp;&mdash;
+                    предназначена для автоматизации задач,
+                    связанные с&nbsp;расчетом заработной платы персонала и&nbsp;реализацией кадровой политики,
+                    с&nbsp;учетом требований законодательства и&nbsp;реальной практики работы предприятий.
+                </p>
+                <ul class="ac-block__list">
+                    <li class="ac-block__element">Ведение кадрового учёта</li>
+                    <li class="ac-block__element">Подготовка и сдача отчетности</li>
+                    <li class="ac-block__element">Расчет заработной платы, больничных, отпусков и прочее</li>
+                    <li class="ac-block__element">Исчисление налогов и взносов с фонда оплаты труда</li>
+                    <li class="ac-block__element">Интеграция с Бухгалтерией предприятия</li>
+                </ul>
+                <button class="ac-block__button">Запустить программу</button>
+            </div>
+                <img alt="бухгалтерия" class="advantages-section__image_left" src="<%=require('src/images/salary.png')%>">
+        </section>
+        <section class="advantages-section advantages-section_control">
+            <img alt="бухгалтерия" class="advantages-section__image" src="<%=require('src/images/control.png')%>">
+            <div class="ac-block">
+                <h2 class="ac-block__title">1С Управление торговлей</h2>
+                <p class="ac-block__description">
+                    Комплексная автоматизация задач оперативного и&nbsp;управленческого учета,
+                    анализа и&nbsp;планирования торговых операций.
+                    Обеспечивает эффективное управление современным торговым предприятием.
+                </p>
+                <p class="ac-block__description">
+                    Программа поддерживает все основные виды торговли
+                    (розничную, оптовую), что позволяет успешно внедрить
+                    ее&nbsp;в&nbsp;большинстве торговых организаций
+                </p>
+                <ul class="ac-block__list">
+                    <li class="ac-block__element">Анализ товарооборота</li>
+                    <li class="ac-block__element">Планирование закупок и поставок</li>
+                    <li class="ac-block__element">Поддержка разных систем налогообложения – ОСНО, УСН, ЕНВД</li>
+                    <li class="ac-block__element">Управленческий учет по торговому предприятию в целом.</li>
+                    <li class="ac-block__element">Управление товародвижением и ценообразованием</li>
+                    <li class="ac-block__element">Прием заказов и контроль их исполнения</li>
+                    <li class="ac-block__element">Оптимизация складских запасов</li>
+                </ul>
+                <button class="ac-block__button">Запустить программу</button>
+            </div>
+        </section>
+        <section class="advantages-section advantages-section_left">
+            <div class="ac-block ac-block_left">
+                <h2 class="ac-block__title">1С управление нашей фирмой</h2>
+                <p class="ac-block__description">
+                    Программа для тех, кто торгует оптом,
+                    через интернет-магазин или в&nbsp;розницу, ведет складской учет,
+                    оказывает различные услуги, выполняет подрядные работы
+                    или занимается мелкосерийным и&nbsp;позаказным производством.
+                </p>
+                <ul class="ac-block__list">
+                    <li class="ac-block__element">Складской учёт, закупки</li>
+                    <li class="ac-block__element">Учёт торговых операций</li>
+                    <li class="ac-block__element">Управленческие отчёты</li>
+                    <li class="ac-block__element">CRM</li>
+                    <li class="ac-block__element">Подготовка отчётности ИП</li>
+                </ul>
+                <button class="ac-block__button">Запустить программу</button>
+            </div>
+            <img alt="бухгалтерия" class="advantages-section__image_left" src="<%=require('src/images/firm.png')%>">
+        </section>
+        <section class="advantages-section">
+            <img alt="бухгалтерия" class="advantages-section__image" src="<%=require('src/images/control.png')%>">
+            <div class="ac-block">
+                <h2 class="ac-block__title">1С САДОВОД</h2>
+                <p class="ac-block__description">
+                    Автоматизация бухгалтерского и&nbsp;налогового учета,
+                    включая подготовку обязательной (регламентированной)
+                    отчетности в&nbsp;садоводческих некоммерческих товариществах (СНТ).
+                </p>
+                <p class="ac-block__description">
+                    Бухгалтерский и&nbsp;налоговый учет ведется в&nbsp;соответствии
+                    с&nbsp;действующим законодательством РФ. В&nbsp;случае ведения
+                    учета председателем СНТ программа не&nbsp;требует знания
+                    бухгалтерского учета и&nbsp;проста в&nbsp;использовании.
+                </p>
+                <ul class="ac-block__list">
+                    <li class="ac-block__element">Учёт участков</li>
+                    <li class="ac-block__element">Учёт электроэнергии и водоснабжения</li>
+                    <li class="ac-block__element">Взносы садоводов</li>
+                    <li class="ac-block__element">Учёт банковских и кассовых операций</li>
+                    <li class="ac-block__element">Учёт заработной платы и персонифицированный учёт</li>
+                </ul>
+                <button class="ac-block__button">Запустить программу</button>
+            </div>
+        </section>
+        <section class="additional">
+            <h2 class="additional__title">дополнительные возможности</h2>
+            <ul class="additional__grid">
+                <li class="additional-card">
+                    <img class="additional-card__icon" src="<%=require('src/images/spark.svg')%>">
+                    <div class="additional-card__text-block">
+                        <h3 class="additional-card__title">1с спарк</h3>
+                        <p class="additional-card__description">
+                            Оценка надежности и&nbsp;мониторинг контрагентов в&nbsp;программах
+                            1С&nbsp;для принятия взвешенных решений о&nbsp;
+                            сотрудничестве и&nbsp;минимизации налоговых рисков</p>
+                    </div>
+                </li>
+                <li class="additional-card">
+                    <img class="additional-card__icon" src="<%=require('src/images/spark.svg')%>">
+                    <div class="additional-card__text-block">
+                        <h3 class="additional-card__title">1с спарк</h3>
+                        <p class="additional-card__description">
+                            Оценка надежности и&nbsp;мониторинг контрагентов в&nbsp;программах
+                            1С&nbsp;для принятия взвешенных решений о&nbsp;
+                            сотрудничестве и&nbsp;минимизации налоговых рисков</p>
+                    </div>
+                </li>
+                <li class="additional-card">
+                    <img class="additional-card__icon" src="<%=require('src/images/spark.svg')%>">
+                    <div class="additional-card__text-block">
+                        <h3 class="additional-card__title">1с спарк</h3>
+                        <p class="additional-card__description">
+                            Оценка надежности и&nbsp;мониторинг контрагентов в&nbsp;программах
+                            1С&nbsp;для принятия взвешенных решений о&nbsp;
+                            сотрудничестве и&nbsp;минимизации налоговых рисков</p>
+                    </div>
+                </li>
+                <li class="additional-card">
+                    <img class="additional-card__icon" src="<%=require('src/images/spark.svg')%>">
+                    <div class="additional-card__text-block">
+                        <h3 class="additional-card__title">1с спарк</h3>
+                        <p class="additional-card__description">
+                            Оценка надежности и&nbsp;мониторинг контрагентов в&nbsp;программах
+                            1С&nbsp;для принятия взвешенных решений о&nbsp;
+                            сотрудничестве и&nbsp;минимизации налоговых рисков</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__logo">
+            <img alt="лого сайта" class="footer__logo-image" src="<%=require('src/images/logo3.png')%>">
+            <a href="index.html" class="footer__logo-text">мой офис</a>
+        </div>
+        <div class="footer__4-blocks">
+            <div class="footer-text-block">
+                <h3 class="footer-text-block__title">Контакты</h3>
+                <ul class="footer-text-block__list">
+                    <li class="footer-text-block__element">
+                        <img class="footer-text-block__icon"
+                             alt="иконка телефона"
+                             src="<%=require('src/images/phone.svg')%>">
+                        <a class="footer-text-block__link" href="tel: +7 (843) 202-21-40">
+                            +7 (843) 202-21-40
+                        </a>
+                    </li>
+                    <li class="footer-text-block__element">
+                        <img class="footer-text-block__icon" alt="иконка почты" src="<%=require('src/images/mail.svg')%>">
+                        <a class="footer-text-block__link" href="mailto: support@moiofis.ru">support@moiofis.ru</a>
+                    </li>
+                    <li class="footer-text-block__element">
+                        <img class="footer-text-block__icon" alt="иконка метки" src="<%=require('src/images/marker.svg')%>">
+                        <a class="footer-text-block__link" href="https://yandex.ru/maps/-/CCQlQNquKA" target="_blank">
+                            г. Казань, ул. Юлиуса Фучика, дом № 90А, помещение 419-420
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-text-block">
+                <h3 class="footer-text-block__title">Компания</h3>
+                <ul class="footer-text-block__list">
+                    <li class="footer-text-block__element">
+                        <a class="footer-text-block__link" href="#">Тарифы</a>
+                    </li>
+                    <li class="footer-text-block__element">
+                        <a class="footer-text-block__link" href="#">О нас</a>
+                    </li>
+                    <li class="footer-text-block__element">
+                        <a class="footer-text-block__link" href="#">Возможности</a>
+                    </li>
+                    <li class="footer-text-block__element">
+                        <a class="footer-text-block__link" href="#">Партнёрам</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-text-block">
+                <h3 class="footer-text-block__title">Продукты</h3>
+                <ul class="footer-text-block__list">
+                    <li class="footer-text-block__element">
+                        <a class="footer-text-block__link" href="#">1С: Бухгалтерия предприятия</a>
+                    </li>
+                    <li class="footer-text-block__element">
+                        <a class="footer-text-block__link" href="#">1С: Зарплата и управление персоналом</a>
+                    </li>
+                    <li class="footer-text-block__element">
+                        <a class="footer-text-block__link" href="#">1С: Управление торговлей</a>
+                    </li>
+                    <li class="footer-text-block__element">
+                        <a class="footer-text-block__link" href="#">1С: Управление нашей фирмой</a>
+                    </li>
+                    <li class="footer-text-block__element">
+                        <a class="footer-text-block__link" href="#">1С: Садовод</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-text-block">
+                <h3 class="footer-text-block__title">Поддержка</h3>
+                <ul class="footer-text-block__list">
+                    <li class="footer-text-block__element">
+                        <a class="footer-text-block__link" href="#">Часто задаваемы вопросы</a>
+                    </li>
+                    <li class="footer-text-block__element">
+                        <a class="footer-text-block__link" href="#">Инструкции</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="footer__bottom-block">
+            <li class="footer__bottom-block-element">
+                <p class="footer__bottom-link">&copy; Все права защищены</p>
+            </li>
+            <li class="footer__bottom-block-element">
+                <a href="#" class="footer__bottom-link">Политика конфиденциальности</a>
+            </li>
+            <li class="footer__bottom-block-element">
+                <a href="#" class="footer__bottom-link">Временные файлы cookies</a>
+            </li>
+        </ul>
+    </footer>
+</div>
+</body>
+</html>

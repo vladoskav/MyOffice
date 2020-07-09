@@ -1,4 +1,21 @@
 .main {
   background-color: $color-gray--20;
+  max-width: 1920px;
+  margin: 0 auto;
+  &_2 {
+    background: url("~src/images/podlozsh.svg");
+    background-size: cover;
+    background-position-y: 20px;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
 }
-
+@media screen and (max-width: 1920px) {
+  .main {
+    &_2 {
+      background: url("~src/images/podlozsh.svg");
+      background-size: cover;
+      background-position-y: -900px;
+    }
+  }
+}

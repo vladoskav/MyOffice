@@ -1,7 +1,7 @@
 .header {
   background: $color-white;
   position: relative;
-
+  z-index: 10;
   &__logo {
     display: flex;
     flex-direction: row;

@@ -9,6 +9,7 @@ const isDev = process.env.NODE_ENV === 'development';
 const config = {
   entry: {
     main: './src/js/index.js',
+    advantages: './src/js/advantages.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -114,6 +115,11 @@ const config = {
       template: './src/pages/index.html',
       filename: 'index.html',
       chunks: ['main']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pages/advantages.html',
+      filename: 'advantages.html',
+      chunks: ['advantages']
     }),
     new WebpackMd5Hash(),
   ]

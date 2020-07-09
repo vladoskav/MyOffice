@@ -14,7 +14,7 @@
         <header class="header">
             <div class="header__upper-menu">
                 <div class="header__logo">
-                    <img alt="лого сайта" class="header__logo-image" src="<%=require('src/images/logo.svg')%>">
+                    <img alt="лого сайта" class="header__logo-image" src="<%=require('src/images/logo3.png')%>">
                     <a href="index.html" class="header__logo-text">мой офис</a>
                 </div>
                 <img class="burger-menu__button" src="<%=require('src/images/open-menu.svg')%>" alt="скрытое меню">
@@ -38,7 +38,7 @@
                                 <a class="nav-bar__link nav-bar__link_mini" href="#">Тарифы</a>
                             </li>
                             <li class="burger-menu__element">
-                                <a class="nav-bar__link nav-bar__link_mini" href="#">Возможности</a>
+                                <a class="nav-bar__link nav-bar__link_mini" href="advantages.html">Возможности</a>
                             </li>
                             <li class="burger-menu__element">
                                 <a class="nav-bar__link nav-bar__link_mini" href="#">Партнёрам</a>
@@ -64,7 +64,7 @@
                         <a class="nav-bar__link">Тарифы</a>
                     </li>
                     <li class="nav-bar__element">
-                        <a class="nav-bar__link">Возможности</a>
+                        <a class="nav-bar__link" href="advantages.html">Возможности</a>
                     </li>
                     <li class="nav-bar__element">
                         <a class="nav-bar__link">Партрнёрам</a>
@@ -116,13 +116,13 @@
                 <img class="stars__3" src="<%=require('src/images/clouds/star8.svg')%>">
                 <img class="cloud__6" src="<%=require('src/images/clouds/cloud6.svg')%>">
                 <h2 class="section-title software__title">типовые программы 1c</h2>
-                <div class="software__grid">
+                <div class="software__grid-1">
                     <div class="card">
-                        <h3 class="card__title">1с: управление нашей фирмой</h3>
+                        <h3 class="card__title">1С: Бухгалтерия предприятия</h3>
                         <p class="card__description">
-                            Торговля и&nbsp;склад, услуги и&nbsp;работы, закупки и&nbsp;резервы,
-                            банк и&nbsp;касса, кадры и&nbsp;расчет зарплаты, производство и
-                            сборочные операции, аналитические отчеты и&nbsp;CRM
+                            Профессиональный инструмент бухгалтера.
+                            С&nbsp;его помощью можно вести бухгалтерский и&nbsp;налоговый учет,
+                            готовить и&nbsp;сдавать обязательную отчетность
                         </p>
                     </div>
                     <div class="card">
@@ -141,12 +141,14 @@
                             анализа и&nbsp;планирования торговых операций
                         </p>
                     </div>
+                </div>
+                <div class="software__grid-2">
                     <div class="card">
-                        <h3 class="card__title">1С: Бухгалтерия предприятия</h3>
+                        <h3 class="card__title">1с: управление нашей фирмой</h3>
                         <p class="card__description">
-                            Профессиональный инструмент бухгалтера.
-                            С&nbsp;его помощью можно вести бухгалтерский и&nbsp;налоговый учет,
-                            готовить и&nbsp;сдавать обязательную отчетность
+                            Торговля и&nbsp;склад, услуги и&nbsp;работы, закупки и&nbsp;резервы,
+                            банк и&nbsp;касса, кадры и&nbsp;расчет зарплаты, производство и
+                            сборочные операции, аналитические отчеты и&nbsp;CRM
                         </p>
                     </div>
                     <div class="card">
@@ -231,7 +233,7 @@
                 <img class="cloud__9" src="<%=require('src/images/clouds/cloud8.svg')%>">
                 <div class="security__left-block">
                     <h2 class="section-title security__title">мы&nbsp;заботимся о&nbsp;безопасности ваших данных</h2>
-                    <img alt="компьютер и сервер" class="security__image" src="<%=require('src/images/security.jpg')%>">
+                    <img alt="компьютер и сервер" class="security__image" src="<%=require('src/images/security.png')%>">
                 </div>
                 <ul class="security__right-block">
                     <li class="grid-list__element security__right-element">
@@ -321,7 +323,7 @@
                         </ul>
                     </div>
                 </div>
-                <button class="software__button">Узнать подробнее</button>
+                <button class="software__button start-work__button">Запустить 1С прямо сейчас</button>
             </section>
             <section class="reviews">
                 <div class="reviews__background"></div>
@@ -393,43 +395,43 @@
                 <h2 class="section-title customers__title">наши клиенты:</h2>
                 <div class="customers__list">
                     <div class="customers__block">
-                        <img class="customers__logo"
-                             src="<%=require('src/images/mullar.svg')%>"
+                        <img class="customers__logo customers__logo_mullar"
+                             src="<%=require('src/images/mullar.png')%>"
                              alt="лого компании муллар">
                     </div>
                     <div class="customers__block">
                         <img class="customers__logo"
-                             src="<%=require('src/images/toys.svg')%>"
+                             src="<%=require('src/images/toys.png')%>"
                              alt="лого компании муллар">
                     </div>
                     <div class="customers__block">
-                        <img class="customers__logo"
-                             src="<%=require('src/images/ferex.svg')%>"
+                        <img class="customers__logo customers__logo_ferex"
+                             src="<%=require('src/images/ferex.png')%>"
                              alt="лого компании муллар">
                     </div>
                     <div class="customers__block">
-                        <img class="customers__logo"
-                             src="<%=require('src/images/fest.svg')%>"
+                        <img class="customers__logo customers__logo_fest"
+                             src="<%=require('src/images/fest.png')%>"
                              alt="лого компании муллар">
                     </div>
                     <div class="customers__block">
-                        <img class="customers__logo"
-                             src="<%=require('src/images/congress.svg')%>"
+                        <img class="customers__logo customers__logo_congress"
+                             src="<%=require('src/images/congress.png')%>"
                              alt="лого компании муллар">
                     </div>
                     <div class="customers__block">
-                        <img class="customers__logo"
-                             src="<%=require('src/images/maximus.svg')%>"
+                        <img class="customers__logo customers__logo_maximus"
+                             src="<%=require('src/images/maximus.png')%>"
                              alt="лого компании муллар">
                     </div>
                     <div class="customers__block">
-                        <img class="customers__logo"
-                             src="<%=require('src/images/suvarstroit.svg')%>"
+                        <img class="customers__logo customers__logo_suvarstroit"
+                             src="<%=require('src/images/suvarstroit.png')%>"
                              alt="лого компании муллар">
                     </div>
                     <div class="customers__block">
-                        <img class="customers__logo"
-                             src="<%=require('src/images/arbitre.svg')%>"
+                        <img class="customers__logo customers__logo_arbitre"
+                             src="<%=require('src/images/arbitre.png')%>"
                              alt="лого компании муллар">
                     </div>
                 </div>
@@ -437,7 +439,7 @@
         </main>
         <footer class="footer">
             <div class="footer__logo">
-                <img alt="лого сайта" class="footer__logo-image" src="<%=require('src/images/logo.svg')%>">
+                <img alt="лого сайта" class="footer__logo-image" src="<%=require('src/images/logo3.png')%>">
                 <a href="index.html" class="footer__logo-text">мой офис</a>
             </div>
             <div class="footer__4-blocks">
@@ -458,7 +460,7 @@
                         </li>
                         <li class="footer-text-block__element">
                             <img class="footer-text-block__icon" alt="иконка метки" src="<%=require('src/images/marker.svg')%>">
-                            <a class="footer-text-block__link" href="https://goo.gl/maps/UG1xQmY7F3R5aGrX8" target="_blank">
+                            <a class="footer-text-block__link" href="https://yandex.ru/maps/-/CCQlQNquKA" target="_blank">
                                 г. Казань, ул. Юлиуса Фучика, дом № 90А, помещение 419-420
                             </a>
                         </li>
@@ -536,7 +538,7 @@
                     </label>
                     <label class="popup__label">
                         Пароль
-                        <input class="popup__input">
+                        <input type="password" class="popup__input">
                     </label>
                     <label>
                         <input class="popup__captcha" placeholder="Тут встраивается ReCaptcha">
