@@ -6,7 +6,7 @@
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="<%=require('src/images/logo.svg')%>">
-    <title>Мой Офис</title>
+    <title>Возможности</title>
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.scss %>">
 </head>
 <body>
@@ -32,7 +32,7 @@
                         <a class="nav-bar__link nav-bar__link_mini nav-bar__link_lk" href="#">Личный кабинет</a>
                     </li>
                     <li class="burger-menu__element">
-                        <a class="nav-bar__link nav-bar__link_mini" href="#">О нас</a>
+                        <a class="nav-bar__link nav-bar__link_mini" href="about.html">О нас</a>
                     </li>
                     <li class="burger-menu__element">
                         <a class="nav-bar__link nav-bar__link_mini" href="#">Тарифы</a>
@@ -58,7 +58,7 @@
         <nav class="nav-bar">
             <ul class="nav-bar__list">
                 <li class="nav-bar__element">
-                    <a class="nav-bar__link">О нас</a>
+                    <a class="nav-bar__link" href="about.html">О нас</a>
                 </li>
                 <li class="nav-bar__element">
                     <a class="nav-bar__link">Тарифы</a>
@@ -84,7 +84,7 @@
             <img class="gear__2" src="<%=require('src/images/gears/gear2.svg')%>">
             <img class="gear__3" src="<%=require('src/images/gears/gear3.svg')%>">
             <img class="gear__4" src="<%=require('src/images/gears/gear4.svg')%>">
-            <h1 class="upper-block__title">возможности</h1>
+            <h1 class="page-title">возможности</h1>
             <p class="upper-block__description">
                 Мой офис&nbsp;&mdash; это пакет услуг, позволяющий вам и&nbsp;вашим
                 сотрудникам работать с&nbsp;программами 1С&nbsp;и&nbsp;Microsoft Office в&nbsp;любое время,
@@ -352,6 +352,26 @@
             </li>
         </ul>
     </footer>
+    <div class="modal">
+        <div class="popup">
+            <span class="popup__close"></span>
+            <h2 class="popup__title">Войти в личный кабинет</h2>
+            <form class="popup__form">
+                <label class="popup__label">
+                    Логин
+                    <input class="popup__input">
+                </label>
+                <label class="popup__label">
+                    Пароль
+                    <input type="password" class="popup__input">
+                </label>
+                <label>
+                    <input class="popup__captcha" placeholder="Тут встраивается ReCaptcha">
+                </label>
+                <button class="popup__button">Войти</button>
+            </form>
+        </div>
+    </div>
 </div>
 </body>
 </html>
