@@ -5,16 +5,24 @@
   padding: 130px 250px 250px 250px;
   align-items: center;
   &_control {
-    //background: url("~src/images/controlbg.png") center;
-    //background-size: cover;
-    //background-position-y: -200px;
+    background: url("~src/images/controlbg.png") center;
+    background-size: cover;
   }
-  &_left {
+  &_accounting {
+    background: url("~src/images/accbg.png") center;
+    background-size: cover;
+  }
+  &_sadovod {
+    background: url("~src/images/sadovod.png") center;
+    padding-bottom: 200px;
   }
   &__image {
     margin-right: 218px;
     width: 380px;
     height: 380px;
+    &_left {
+
+    }
     &_salary {
       margin-right: 0;
       max-width: 380px;

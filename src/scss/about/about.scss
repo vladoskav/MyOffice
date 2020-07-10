@@ -2,6 +2,51 @@
   padding: 60px 0 300px 0;
   margin: 0 auto;
   max-width: 1140px;
+  &__cloud1 {
+    position: absolute;
+    top: 25px;
+    left: 660px;
+  }
+  &__cloud2 {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+  &__cloud3 {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+  }
+  &__cloud4 {
+    position: absolute;
+    top: 800px;
+    left: 100px;
+  }
+  &__cloud5 {
+    position: absolute;
+    top: 600px;
+    right: 100px;
+  }
+  &__cloud6{
+    position: absolute;
+    right: 650px;
+    bottom: 50px;
+  }
+  &__cloud7 {
+    position: absolute;
+    bottom: 50px;
+    left: 300px;
+  }
+  &__cloud8 {
+    position: absolute;
+    bottom: 350px;
+    left: 150px;
+  }
+  &__cloud9 {
+    position: absolute;
+    bottom: 400px;
+    right: 150px;
+  }
   &__left-block {
     display: flex;
     flex-direction: column;
@@ -13,6 +58,7 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    margin-bottom: 69px;
   }
   &__description {
     font-family: $font-family--montserrat;
@@ -98,6 +144,9 @@
 @media screen and (max-width: 768px) {
   .about {
     padding: 15px;
+    &__description-block {
+      margin-bottom: 0;
+    }
     &__right-block {
       grid-template-columns: repeat(1, minmax(176px, 300px));
     }
