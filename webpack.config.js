@@ -10,7 +10,8 @@ const config = {
   entry: {
     main: './src/js/index.js',
     advantages: './src/js/advantages.js',
-    about: './src/js/about.js'
+    about: './src/js/about.js',
+    questions: './src/js/questions.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -126,6 +127,11 @@ const config = {
       template: './src/pages/about.html',
       filename: 'about.html',
       chunks: ['about']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pages/questions.html',
+      filename: 'questions.html',
+      chunks: ['questions']
     }),
     new WebpackMd5Hash(),
   ]

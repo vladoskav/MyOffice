@@ -5,7 +5,7 @@ import "src/scss/advantages.scss";
 const lkButton = document.querySelector('.header__lk-button');
 const burgerButton = document.querySelector('.burger-menu__button');
 const burgerMenu = document.querySelector('.burger-menu');
-const mainTwo = document.querySelector('.main_2');
+const main = document.querySelector('.main');
 const modal = document.querySelector('.modal');
 const popupClose = document.querySelector('.popup__close');
 const lkLink = document.querySelector('.nav-bar__link_lk');
@@ -17,6 +17,10 @@ const openModal = () => {
 popupClose.addEventListener('click', () => {
 
     modal.classList.remove('modal_is-opened');
+});
+modal.addEventListener('click', () => {
+    modal.classList.remove('modal_is-opened');
+
 });
 
 lkLink.addEventListener('click', () => {
@@ -32,6 +36,6 @@ burgerButton.addEventListener('click', () => {
     burgerMenu.classList.toggle('burger-menu_opened');
 
 });
-mainTwo.addEventListener('click', () => {
+main.addEventListener('click', () => {
     burgerMenu.classList.remove('burger-menu_opened')
 });
