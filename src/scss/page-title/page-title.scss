@@ -18,6 +18,13 @@
     border-bottom: 4px solid #ff9700;
     z-index: 6;
   }
+  &_support {
+    text-align: start;
+    margin-bottom: 34px;
+    &:after {
+      display: none;
+    }
+  }
 }
 @media screen and (max-width: $screen-w--xxs) {
   .page-title {

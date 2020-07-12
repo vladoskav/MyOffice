@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Сайт компании Мой Офис">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="<%=require('src/images/logo.svg')%>">
+    <title>Инструкции и поддержка</title>
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.scss %>">
+</head>
+<body>
+<div class="page">
+    <header class="header">
+        <div class="header__upper-menu">
+            <div class="header__logo">
+                <img alt="лого сайта" class="header__logo-image" src="<%=require('src/images/logo3.png')%>">
+                <a href="index.html" class="header__logo-text">мой офис</a>
+            </div>
+            <img class="burger-menu__button" src="<%=require('src/images/open-menu.svg')%>" alt="скрытое меню">
+            <nav class="burger-menu">
+                <ul class="burger-menu__list">
+                    <li class="burger-menu__element">
+                        <a class="nav-bar__link nav-bar__link_mini" href="tel: +7 (843) 202-21-40">
+                            +7 (843) 202-21-40
+                        </a>
+                    </li>
+                    <li class="burger-menu__element">
+                        <a class="nav-bar__link nav-bar__link_mini" href="#">Начать работу</a>
+                    </li>
+                    <li class="burger-menu__element">
+                        <a class="nav-bar__link nav-bar__link_mini nav-bar__link_lk" href="#">Личный кабинет</a>
+                    </li>
+                    <li class="burger-menu__element">
+                        <a class="nav-bar__link nav-bar__link_mini" href="about.html">О нас</a>
+                    </li>
+                    <li class="burger-menu__element">
+                        <a class="nav-bar__link nav-bar__link_mini" href="#">Тарифы</a>
+                    </li>
+                    <li class="burger-menu__element">
+                        <a class="nav-bar__link nav-bar__link_mini" href="advantages.html">Возможности</a>
+                    </li>
+                    <li class="burger-menu__element">
+                        <a class="nav-bar__link nav-bar__link_mini" href="#">Партнёрам</a>
+                    </li>
+                    <li class="burger-menu__element">
+                        <a class="nav-bar__link nav-bar__link_mini" href="support.html">Инструкции и поддержка</a>
+                    </li>
+                    <li class="burger-menu__element">
+                        <a class="nav-bar__link nav-bar__link_mini" href="questions.html">Частые вопросы</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="tel: +7 (843) 202-21-40" class="header__phone">+7 (843) 202-21-40</a>
+            <button class="header__start-button">Начать работу</button>
+            <button class="header__lk-button">Личный кабинет</button>
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-bar__list">
+                <li class="nav-bar__element">
+                    <a class="nav-bar__link" href="about.html">О нас</a>
+                </li>
+                <li class="nav-bar__element">
+                    <a class="nav-bar__link">Тарифы</a>
+                </li>
+                <li class="nav-bar__element">
+                    <a class="nav-bar__link" href="advantages.html">Возможности</a>
+                </li>
+                <li class="nav-bar__element">
+                    <a class="nav-bar__link">Партрнёрам</a>
+                </li>
+                <li class="nav-bar__element">
+                    <a class="nav-bar__link" href="support.html">Инструкции и поддержка</a>
+                </li>
+                <li class="nav-bar__element">
+                    <a class="nav-bar__link" href="questions.html">Частые вопросы</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</div>
+<main class="main main_index">
+    <section class="support">
+        <div class="support__upper-block">
+            <div class="support__upper-left">
+                <h1 class="page-title_support page-title">чем мы можем вам помочь?</h1>
+                <p class="support__description">
+                    Для того, чтобы вам было комфортно и&nbsp;просто пользоваться сервисом
+                    &laquo;Мой Офис&raquo;, мы&nbsp;подготовили инструкции.
+                    Если&nbsp;же вам не&nbsp;удалось найти ответ на&nbsp;свой вопрос&nbsp;&mdash;
+                    специалисты технической поддержки всегда вам подскажут!
+                </p>
+                <form class="support__label">
+                    <label >
+                        <input placeholder="Какова длина Дуная?" class="support__search-field">
+                    </label>
+                    <button class="support__search-button">Найти</button>
+                </form>
+            </div>
+            <img alt="картинка с компьютером" class="support__image" src="<%=require('src/images/support.png')%>">
+        </div>
+        <div class="support__bottom-block">
+            <div class="support__bottom-part">
+                <h2 class="support__bottom-title">инструкции</h2>
+                <ul class="support__bottom-list">
+                    <li class="support__bottom-element"><a class="support__bottom-link" href="#">Работа в личном кабинете</a></li>
+                    <li class="support__bottom-element"><a class="support__bottom-link support__bottom-link_bold" href="#">Создание новой базы 1С</a></li>
+                    <li class="support__bottom-element"><a class="support__bottom-link" href="#">Загрузка базы 1С в облако</a></li>
+                    <li class="support__bottom-element"><a class="support__bottom-link" href="#">Обновление баз 1С</a></li>
+                    <li class="support__bottom-element"><a class="support__bottom-link" href="#">Подключение торгового оборудования</a></li>
+                </ul>
+            </div>
+            <div class="support__bottom-part">
+                <h2 class="support__bottom-title">техническая поддержка</h2>
+                <p class="support__bottom-text">
+                    Если у&nbsp;вас остались вопросы&nbsp;&mdash;
+                    наши специалисты технической поддержки всегда готовы прийти вам на&nbsp;помощь!
+                </p>
+                <h3 class="support__bottom-subtitle">Часы работы тех.поддержки:</h3>
+                <p class="support__bottom-text">9:00 до&nbsp;18:00 по&nbsp;московскому времени</p>
+                <h3 class="support__bottom-subtitle support__bottom-subtitle_message">Связь с поддержкой</h3>
+                <p class="support__bottom-text">
+                    Для обращения в&nbsp;техническую поддержку достаточно заполнить форму.
+                    Мы&nbsp;ответим в&nbsp;течение &#8470; минут в&nbsp;рабочее время.
+                </p>
+                <button class="support__bottom-button">Связаться с поддержкой</button>
+                <p class="support__bottom-text">Также вы можете скачать программу удалённой поддержки:</p>
+                <a href="#" class="support__bottom-link support__bottom-link_right">Скачать клиент удалённой поддержки</a>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__logo">
+        <img alt="лого сайта" class="footer__logo-image" src="<%=require('src/images/logo3.png')%>">
+        <a href="index.html" class="footer__logo-text">мой офис</a>
+    </div>
+    <div class="footer__4-blocks">
+        <div class="footer-text-block">
+            <h3 class="footer-text-block__title">Контакты</h3>
+            <ul class="footer-text-block__list">
+                <li class="footer-text-block__element">
+                    <img class="footer-text-block__icon"
+                         alt="иконка телефона"
+                         src="<%=require('src/images/phone.svg')%>">
+                    <a class="footer-text-block__link" href="tel: +7 (843) 202-21-40">
+                        +7 (843) 202-21-40
+                    </a>
+                </li>
+                <li class="footer-text-block__element">
+                    <img class="footer-text-block__icon" alt="иконка почты" src="<%=require('src/images/mail.svg')%>">
+                    <a class="footer-text-block__link" href="mailto: support@moiofis.ru">support@moiofis.ru</a>
+                </li>
+                <li class="footer-text-block__element">
+                    <img class="footer-text-block__icon" alt="иконка метки" src="<%=require('src/images/marker.svg')%>">
+                    <a class="footer-text-block__link" href="https://yandex.ru/maps/-/CCQlQNquKA" target="_blank">
+                        г. Казань, ул. Юлиуса Фучика, дом № 90А, помещение 419-420
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-text-block">
+            <h3 class="footer-text-block__title">Компания</h3>
+            <ul class="footer-text-block__list">
+                <li class="footer-text-block__element">
+                    <a class="footer-text-block__link" href="#">Тарифы</a>
+                </li>
+                <li class="footer-text-block__element">
+                    <a class="footer-text-block__link" href="about.html">О нас</a>
+                </li>
+                <li class="footer-text-block__element">
+                    <a class="footer-text-block__link" href="advantages.html">Возможности</a>
+                </li>
+                <li class="footer-text-block__element">
+                    <a class="footer-text-block__link" href="#">Партнёрам</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-text-block">
+            <h3 class="footer-text-block__title">Продукты</h3>
+            <ul class="footer-text-block__list">
+                <li class="footer-text-block__element">
+                    <a class="footer-text-block__link" href="#">1С: Бухгалтерия предприятия</a>
+                </li>
+                <li class="footer-text-block__element">
+                    <a class="footer-text-block__link" href="#">1С: Зарплата и управление персоналом</a>
+                </li>
+                <li class="footer-text-block__element">
+                    <a class="footer-text-block__link" href="#">1С: Управление торговлей</a>
+                </li>
+                <li class="footer-text-block__element">
+                    <a class="footer-text-block__link" href="#">1С: Управление нашей фирмой</a>
+                </li>
+                <li class="footer-text-block__element">
+                    <a class="footer-text-block__link" href="#">1С: Садовод</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-text-block">
+            <h3 class="footer-text-block__title">Поддержка</h3>
+            <ul class="footer-text-block__list">
+                <li class="footer-text-block__element">
+                    <a class="footer-text-block__link" href="questions.html">Часто задаваемы вопросы</a>
+                </li>
+                <li class="footer-text-block__element">
+                    <a class="footer-text-block__link" href="support.html">Инструкции</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <ul class="footer__bottom-block">
+        <li class="footer__bottom-block-element">
+            <p class="footer__bottom-link">&copy; Все права защищены</p>
+        </li>
+        <li class="footer__bottom-block-element">
+            <a href="#" class="footer__bottom-link">Политика конфиденциальности</a>
+        </li>
+        <li class="footer__bottom-block-element">
+            <a href="#" class="footer__bottom-link">Временные файлы cookies</a>
+        </li>
+    </ul>
+</footer>
+<div class="modal">
+    <div class="popup">
+        <span class="popup__close"></span>
+        <h2 class="popup__title">Войти в личный кабинет</h2>
+        <form class="popup__form">
+            <label class="popup__label">
+                Логин
+                <input class="popup__input">
+            </label>
+            <label class="popup__label">
+                Пароль
+                <input type="password" class="popup__input">
+            </label>
+            <label>
+                <input class="popup__captcha" placeholder="Тут встраивается ReCaptcha">
+            </label>
+            <button class="popup__button">Войти</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

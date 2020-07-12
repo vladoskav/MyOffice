@@ -1,6 +1,5 @@
 .main {
-  max-width: 1920px;
-  margin: 0 auto;
+
 
   &_index {
     background-color: $color-gray--20;
@@ -11,5 +10,6 @@
   }
   &_questions {
     background: #fafcff;
+    position: relative;
   }
 }
