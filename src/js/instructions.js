@@ -1,5 +1,5 @@
 import "normalize.css";
-import "src/scss/notFound.scss";
+import "src/scss/instructions.scss";
 
 const lkButton = document.querySelector('.header__lk-button');
 const burgerButton = document.querySelector('.burger-menu__button');

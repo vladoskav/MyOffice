@@ -15,7 +15,8 @@ const config = {
     support: './src/js/support.js',
     notFound: './src/js/notFound.js',
     serverError: './src/js/serverError.js',
-    policy: './src/js/policy.js'
+    policy: './src/js/policy.js',
+    instructions: './src/js/instructions.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -156,6 +157,11 @@ const config = {
       template: './src/pages/policy.html',
       filename: 'policy.html',
       chunks: ['policy']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pages/instructions.html',
+      filename: 'instructions.html',
+      chunks: ['instructions']
     }),
     new WebpackMd5Hash(),
   ]

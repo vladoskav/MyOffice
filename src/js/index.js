@@ -38,10 +38,7 @@ const lkLink = document.querySelector('.nav-bar__link_lk');
 const openModal = () => {
     modal.classList.add('modal_is-opened');
 };
-modal.addEventListener('click', () => {
-    modal.classList.remove('modal_is-opened');
 
-});
 
 popupClose.addEventListener('click', () => {
 

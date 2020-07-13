@@ -18,9 +18,17 @@
     border-bottom: 4px solid #ff9700;
     z-index: 6;
   }
+
   &_support {
-    text-align: start;
+    text-align: left;
     margin-bottom: 34px;
+    &:after {
+      display: none;
+    }
+  }
+  &_instructions {
+    text-align: left;
+    margin-bottom: 26px;
     &:after {
       display: none;
     }

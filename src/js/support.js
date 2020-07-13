@@ -17,10 +17,7 @@ popupClose.addEventListener('click', () => {
 
     modal.classList.remove('modal_is-opened');
 });
-modal.addEventListener('click', () => {
-    modal.classList.remove('modal_is-opened');
 
-});
 lkLink.addEventListener('click', () => {
     openModal();
     burgerMenu.classList.remove('burger-menu_opened');
