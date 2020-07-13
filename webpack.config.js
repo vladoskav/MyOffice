@@ -12,7 +12,10 @@ const config = {
     advantages: './src/js/advantages.js',
     about: './src/js/about.js',
     questions: './src/js/questions.js',
-    support: './src/js/support.js'
+    support: './src/js/support.js',
+    notFound: './src/js/notFound.js',
+    serverError: './src/js/serverError.js',
+    policy: './src/js/policy.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -138,6 +141,21 @@ const config = {
       template: './src/pages/support.html',
       filename: 'support.html',
       chunks: ['support']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pages/notFound.html',
+      filename: 'notFound.html',
+      chunks: ['notFound']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pages/serverError.html',
+      filename: 'serverError.html',
+      chunks: ['serverError']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pages/policy.html',
+      filename: 'policy.html',
+      chunks: ['policy']
     }),
     new WebpackMd5Hash(),
   ]

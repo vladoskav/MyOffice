@@ -1,6 +1,10 @@
 .main {
-
-
+  &_notFound {
+    background: linear-gradient(180deg, #FAFCFF 0%, #EDF6FF 39.06%, #FAFCFF 96.35%);
+  }
+  &_serverError {
+    background: #fafcff;
+  }
   &_index {
     background-color: $color-gray--20;
   }

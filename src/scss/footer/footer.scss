@@ -1,5 +1,5 @@
 .footer {
-  padding: 100px 250px;
+  padding: 100px 200px;
   display: flex;
   flex-direction: column;
   background: linear-gradient(105.17deg, #3685D7 0.12%, rgba(54, 133, 215, 0.81) 121.82%);
@@ -9,6 +9,8 @@
     justify-content: start;
     align-items: center;
     margin-bottom: 32px;
+    text-decoration: none;
+    max-width: 250px;
   }
   &__bottom-block {
     display: flex;
@@ -56,7 +58,6 @@
     text-transform: uppercase;
     color: $color-white;
     text-align: center;
-    text-decoration: none;
   }
 }
 @media screen and (max-width: $screen-w--xxl) {
