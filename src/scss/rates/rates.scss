@@ -1,0 +1,231 @@
+.rates {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 50px 150px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__parts {
+    position: absolute;
+    z-index: 0;
+  }
+  &__part1 {
+    top: 50px;
+    left: 500px;
+  }
+  &__part2 {
+    top: 150px;
+    left: 100px;
+  }
+  &__part3 {
+    top: 100px;
+    right: 100px;
+  }
+  &__part4 {
+    top: 550px;
+    left: 300px;
+  }
+  &__part5 {
+    top: 550px;
+    right: 250px;
+  }
+  &__part6 {
+    top: 1050px;
+    right: 360px;
+  }
+  &__part7 {
+    top: 1250px;
+    left: 200px;
+  }
+  &__part8 {
+    top: 2000px;
+    left: 100px;
+  }
+  &__part9 {
+    top: 1835px;
+    right: 310px;
+  }
+  &__part10 {
+    bottom: 2100px;
+    right: 250px;
+  }
+  &__part11 {
+    bottom: 1400px;
+    left: 300px;
+  }
+  &__part12 {
+    bottom: 1250px;
+    left: 375px;
+  }
+  &__part13 {
+    bottom: 800px;
+    right: 350px;
+  }
+  &__part14 {
+    bottom: 200px;
+    right: 100px;
+  }
+  &__part15 {
+    bottom: 25px;
+    left: 600px;
+  }
+  &__part16 {
+    bottom: 100px;
+    right: 800px;
+  }
+  &__calculate {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 98px;
+  }
+  &__prices-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+  }
+  &__add-services {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 96px;
+  }
+  &__to-pay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 96px;
+  }
+  &__to-plug {
+    background: #3685D7;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-family: $font-family--montserrat;
+    font-style: normal;
+    font-weight: 600;
+    padding: 12px 32px;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    border: 0;
+    color: $color-white;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__calc-image {
+    object-fit: cover;
+    max-width: 435px;
+    margin-right: 158px;
+  }
+  &__page-description {
+    font-family: $font-family--montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: $color-gray--d10;
+    margin: 0 0 45px;
+    max-width: 712px;
+  }
+  &__terms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__terms-bottom {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: inherit;
+  }
+  &__terms-title {
+    font-family: $font-family--montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $color-dark-blue;
+    margin: 0;
+    &:after {
+      content: "";
+      display: block;
+      margin: 0 auto 33px auto;
+      width: 100%;
+      padding-top: 18px;
+      border-bottom: 3px solid #3685D7;
+    }
+  }
+  &__terms-column {
+    margin-right: 31px;
+    max-width: 345px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__terms-text {
+    font-family: $font-family--montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-gray--d10;
+    &_bold {
+      font-weight: 600;
+    }
+  }
+}
+@media screen and (max-width: 1100px) {
+  .rates {
+    &__prices-block {
+      flex-direction: column;
+    }
+    &__calculate {
+      flex-direction: column-reverse;
+
+    }
+    &__calc-image {
+      margin: 0;
+    }
+    &__parts {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .rates {
+    padding: 50px 15px;
+    &__terms-bottom {
+      flex-direction: column;
+    }
+    &__terms-column {
+      margin: 0 0 30px 0;
+    }
+    &__calc-image {
+      max-width: 280px;
+    }
+  }
+}
+@media screen and (max-width: 475px) {
+  .rates {
+    &__prices-block {
+      margin-bottom: 50px;
+    }
+    &__calculate {
+      margin-bottom: 50px;
+    }
+    &__terms-title {
+      &:first-child {
+        margin-top: 30px;
+      }
+    }
+  }
+}

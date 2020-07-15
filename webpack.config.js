@@ -17,7 +17,8 @@ const config = {
     serverError: './src/js/serverError.js',
     policy: './src/js/policy.js',
     instructions: './src/js/instructions.js',
-    partners: './src/js/partners.js'
+    partners: './src/js/partners.js',
+    rates: './src/js/rates.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -168,6 +169,11 @@ const config = {
       template: './src/pages/partners.html',
       filename: 'partners.html',
       chunks: ['partners']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pages/rates.html',
+      filename: 'rates.html',
+      chunks: ['rates']
     }),
     new WebpackMd5Hash(),
   ]
