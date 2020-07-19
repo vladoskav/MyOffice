@@ -1,0 +1,125 @@
+.profile-settings {
+  max-width: 754px;
+  margin: 0 auto;
+  background: $color-white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  &__title-wrapper {
+    background: #C8E3FF;
+    padding: 18px 0 18px 0;
+  }
+  &__title {
+    font-family: $font-family--montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: $color-dark-blue;
+    margin: 0;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 557px;
+    margin: 0 auto;
+    padding: 46px 0 60px 0;
+  }
+  &__label {
+    margin-bottom: 38px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    &:last-child {
+      margin-bottom: 50px;
+    }
+  }
+  &__text {
+    font-family: $font-family--montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    color: $color-gray--d10;
+    margin: 0;
+    width: 144px;
+  }
+  &__next-title {
+    font-family: $font-family--montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: $color-dark-blue;
+    margin: 0 0 22px 0;
+  }
+  &__button {
+    background: #3685D7;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-family: $font-family--montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: $color-white;
+    border: 0;
+    cursor: pointer;
+    transition: all .2s linear;
+    width: 220px;
+    height: 40px;
+    &:hover {
+      background: $color-white;
+      color: $color-dark-blue;
+      border: 0 solid $color-background-blue;
+      transition: all .2s linear;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  &__input {
+    background: #FFFFFF;
+    border: 1px solid rgba(52, 52, 52, 0.2);
+    box-sizing: border-box;
+    margin-left: 63px;
+    font-family: $font-family--montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-gray--d10;
+    &::placeholder {
+      color: inherit;
+    }
+    &_disabled {
+      background-color: inherit;
+      border: 0;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .profile-settings {
+    &__form {
+      padding: 15px;
+    }
+    &__label {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__text {
+      text-align: center;
+    }
+    &__input {
+      margin: 15px 0 0 0;
+      &::placeholder {
+        text-align: center;
+      }
+    }
+  }
+}
