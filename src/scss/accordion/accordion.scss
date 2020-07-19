@@ -5,6 +5,10 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  &_program {
+    background: none;
+    padding: 0;
+  }
   &:last-child {
     margin-bottom: 0;
   }
@@ -12,6 +16,12 @@
     display: none;
     &_active {
       display: block;
+    }
+    &_price-active {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
     }
   }
   &__title {
@@ -22,6 +32,11 @@
     line-height: 20px;
     color: $color-dark-blue;
     margin: 0;
+    &_program {
+      font-size: 20px;
+      line-height: 24px;
+      align-self: center;
+    }
   }
   &__panel {
     display: flex;
@@ -31,6 +46,32 @@
       content: url("~src/images/+.svg");
       float: left;
       margin-right: 20px;
+    }
+    &_program {
+      padding: 12px;
+      &:before {
+        content: url("~src/images/arrowAcc.svg");
+        transform: rotate(-90deg);
+      }
+    }
+    &_text {
+      padding: 20px;
+      margin-bottom: 12px;
+      background: #EDF6FF;
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+      &:before {
+        margin-right: 26px;
+        float: left;
+        content: url("~src/images/rightAcc.svg");
+        transform: rotate(-90deg);
+      }
+    }
+    &_active-program {
+      &:before {
+        transform: none;
+      }
     }
     &_active {
       &:before {
@@ -47,5 +88,16 @@
     line-height: 20px;
     color: $color-dark-blue;
     margin: 16px 0 0 0;
+    &_date {
+      &:before {
+        content: url("~src/images/unList.svg");
+      }
+    }
+    &_program {
+      font-size: 18px;
+      line-height: 22px;
+      color: $color-gray--d10;
+      margin: 0;
+    }
     }
 }

@@ -53,10 +53,10 @@
                         <a class="nav-bar__link nav-bar__link_mini" href="lkProgram.html">Партнёрская программа</a>
                     </li>
                     <li class="burger-menu__element">
-                        <a class="nav-bar__link nav-bar__link_mini nav-bar__link_active" href="lkCompany.html">Настройки компании</a>
+                        <a class="nav-bar__link nav-bar__link_mini" href="lkCompany.html">Настройки компании</a>
                     </li>
                     <li class="burger-menu__element">
-                        <a class="nav-bar__link nav-bar__link_mini" href="lkProfile.html">Настройки профиля</a>
+                        <a class="nav-bar__link nav-bar__link_mini nav-bar__link_active" href="lkProfile.html">Настройки профиля</a>
                     </li>
                 </ul>
             </nav>
@@ -95,58 +95,100 @@
                     <a class="nav-bar__link nav-bar__link_lk" href="lkProgram.html">Партнёрская программа</a>
                 </li>
                 <li class="nav-bar__element">
-                    <a class="nav-bar__link nav-bar__link_lk nav-bar__link_active" href="lkCompany.html">Настройки компании</a>
+                    <a class="nav-bar__link nav-bar__link_lk" href="lkCompany.html">Настройки компании</a>
                 </li>
                 <li class="nav-bar__element">
-                    <a class="nav-bar__link nav-bar__link_lk" href="lkProfile.html">Настройки профиля</a>
+                    <a class="nav-bar__link nav-bar__link_lk nav-bar__link_active" href="lkProfile.html">Настройки профиля</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main class="main main_lk">
-        <section class="profile-settings profile-settings_company">
-            <div class="profile-settings__title-wrapper">
-                <h2 class="profile-settings__title">Настройка компании</h2>
+        <section class="lk-program">
+            <div class="profile-settings profile-settings_program">
+                <div class="profile-settings__title-wrapper">
+                    <h2 class="profile-settings__title">Условия партнёрской программы:</h2>
+                </div>
+                <div class="lk-program__wrapper">
+                    <p class="lk-program__description">
+                        Схема сотрудничества очень проста: вы&nbsp;приводите к&nbsp;нам клиентов,
+                        а&nbsp;мы&nbsp;выплачиваем вам&nbsp;10% от&nbsp;всех их&nbsp;платежей.
+                    </p>
+                    <p class="lk-program__description">
+                        Например, вы&nbsp;привели к&nbsp;нам 10&nbsp;клиентов,
+                        которые в&nbsp;сумме платят нам за&nbsp;использование сервиса 50&nbsp;000 руб./мес.
+                        В&nbsp;итоге вы&nbsp;получаете 5&nbsp;000 руб./мес.
+                    </p>
+                    <p class="lk-program__description">
+                        Сотрудничество с&nbsp;нами не&nbsp;ограничивается только привлечением клиентов.
+                        Мы&nbsp;готовы рассматривать любые предложения и&nbsp;варианты сотрудничества.
+                        Пишите нам: partners@moiofis.ru.
+                    </p>
+                </div>
             </div>
-            <form class="profile-settings__form profile-settings__form_company">
-                <label class="profile-settings__label">
-                    <p class="profile-settings__text profile-settings__text_company profile-settings__text_textarea">Наименование</p>
-                    <textarea class="profile-settings__input profile-settings__input_textarea"></textarea>
-                </label>
-                <label class="profile-settings__label">
-                    <p class="profile-settings__text profile-settings__text_company">ИНН</p>
-                    <input class="profile-settings__input">
-                </label>
-                <label class="profile-settings__label">
-                    <p class="profile-settings__text profile-settings__text_company">КПП</p>
-                    <input class="profile-settings__input">
-                </label>
-                <label class="profile-settings__label">
-                    <p class="profile-settings__text profile-settings__text_company">Юридический адрес</p>
-                    <input class="profile-settings__input">
-                </label>
-                <label class="profile-settings__label">
-                    <p class="profile-settings__text profile-settings__text_company">Почтовый адрес</p>
-                    <input class="profile-settings__input">
-                </label>
-                <label class="profile-settings__label">
-                    <p class="profile-settings__text profile-settings__text_company">Наименование банка</p>
-                    <input class="profile-settings__input">
-                </label>
-                <label class="profile-settings__label">
-                    <p class="profile-settings__text profile-settings__text_company">БИК</p>
-                    <input class="profile-settings__input">
-                </label>
-                <label class="profile-settings__label">
-                    <p class="profile-settings__text profile-settings__text_company">Расчётный счёт</p>
-                    <input class="profile-settings__input">
-                </label>
-                <label class="profile-settings__label">
-                    <p class="profile-settings__text profile-settings__text_company">Корреспондентский счёт</p>
-                    <input class="profile-settings__input">
-                </label>
-                <button class="profile-settings__button">Сохранить</button>
-            </form>
+            <div class="profile-settings profile-settings_program">
+                <div class="profile-settings__title-wrapper">
+                    <h2 class="profile-settings__title">Ваше вознаграждение:</h2>
+                </div>
+                <div class="lk-program__wrapper lk-program__wrapper_sum">
+                    <p class="lk-program__description lk-program__description_bold">
+                        2 000 рублей
+                    </p>
+                    <button class="lk-program__button">Вывести средства</button>
+                </div>
+            </div>
+            <div class="profile-settings profile-settings_program profile-settings_clients">
+                <div class="profile-settings__title-wrapper">
+                    <h2 class="profile-settings__title">Список клиентов</h2>
+                </div>
+                <div class="lk-program__wrapper lk-program__wrapper_clients">
+                    <div class="lk-program__row">
+                        <p class="lk-program__title-element">Клиент</p>
+                        <p class="lk-program__title-element">Логин</p>
+                    </div>
+                    <div class="lk-program__row lk-program__row_blue">
+                        <p class="lk-program__element">Бердымухамедов Гурбангулы</p>
+                        <p class="lk-program__element">@gurbanguliberdimuhamedov</p>
+                    </div>
+                    <div class="lk-program__row">
+                        <p class="lk-program__element">Султанова Елена</p>
+                        <p class="lk-program__element">@sultanovaelena</p>
+                    </div>
+                    <button class="lk-program__clients-button">+ Клиент</button>
+                </div>
+            </div>
+            <div class="profile-settings profile-settings_program">
+                <div class="profile-settings__title-wrapper">
+                    <h2 class="profile-settings__title">История выплат</h2>
+                </div>
+                <div class="lk-program__wrapper lk-program__wrapper_history">
+                    <div class="accordion accordion_program">
+                        <div class="accordion__panel accordion__panel_program">
+                            <h3 class="accordion__title accordion__title_program">2020</h3>
+                        </div>
+                        <div class="accordion__text-block accordion__text-block_program">
+                            <div class="accordion__panel_text">
+                                <p class="accordion__text accordion__text_program">
+                                    Май
+                                </p>
+                            </div>
+                            <div class="accordion__text-block">
+                                <p class="accordion__text accordion__text_date">10.05</p>
+                                <p class="accordion__text">1 000 руб.</p>
+                            </div>
+                            <div class="accordion__panel_text">
+                                <p class="accordion__text accordion__text_program">
+                                    Февраль
+                                </p>
+                            </div>
+                            <div class="accordion__text-block">
+                                <p class="accordion__text accordion__text_date">10.05</p>
+                                <p class="accordion__text">1 000 руб.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="footer">

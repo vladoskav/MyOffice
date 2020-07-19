@@ -20,7 +20,8 @@ const config = {
     partners: './src/js/partners.js',
     rates: './src/js/rates.js',
     lkProfile: './src/js/lkProfile.js',
-    lkCompany: './src/js/lkCompany.js'
+    lkCompany: './src/js/lkCompany.js',
+    lkProgram: './src/js/lkProgram.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -186,6 +187,11 @@ const config = {
       template: './src/pages/lkCompany.html',
       filename: 'lkCompany.html',
       chunks: ['lkCompany']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pages/lkProgram.html',
+      filename: 'lkProgram.html',
+      chunks: ['lkProgram']
     }),
     new WebpackMd5Hash(),
   ]
