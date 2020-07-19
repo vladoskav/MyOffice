@@ -5,6 +5,33 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  &__button {
+    font-family: $font-family--montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+    padding: 15px 30px;
+    width: 260px;
+    background: #3685D7;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    transition: all .2s linear;
+    &:hover {
+      background: $color-white;
+      color: $color-dark-blue;
+      border: 0 solid $color-background-blue;
+      transition: all .2s linear;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
   &__mark-left {
     position: absolute;
     top: 200px;
@@ -40,7 +67,7 @@
     list-style-type: none;
     z-index: 4;
     padding: 0;
-    margin: 0;
+    margin: 0 0 60px 0;
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 555px));
     grid-gap: 30px;
