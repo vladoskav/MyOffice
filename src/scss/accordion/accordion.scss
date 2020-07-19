@@ -1,0 +1,51 @@
+.accordion {
+  background: rgba(200, 227, 255, 0.3);
+  border-radius: 4px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &__text-block {
+    display: none;
+    &_active {
+      display: block;
+    }
+  }
+  &__title {
+    font-family: $font-family--montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-dark-blue;
+    margin: 0;
+  }
+  &__panel {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    &:before {
+      content: url("~src/images/+.svg");
+      float: left;
+      margin-right: 20px;
+    }
+    &_active {
+      &:before {
+        content: url("~src/images/-.svg")
+      }
+    }
+  }
+  &__text {
+    font-family: $font-family--montserrat;
+    font-style: normal;
+    font-weight: normal;
+    text-align: start;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-dark-blue;
+    margin: 16px 0 0 0;
+    }
+}

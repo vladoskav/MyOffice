@@ -1,0 +1,104 @@
+.additional {
+  padding: 130px 250px 250px 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &__button {
+    font-family: $font-family--montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+    padding: 15px 30px;
+    width: 260px;
+    background: #3685D7;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    transition: all .2s linear;
+    &:hover {
+      background: $color-white;
+      color: $color-dark-blue;
+      border: 0 solid $color-background-blue;
+      transition: all .2s linear;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  &__mark-left {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    z-index: 0;
+  }
+  &__mark-right {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    z-index: 0;
+  }
+  &__title {
+    font-family: $font-family--montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-dark-blue;
+    margin: 0;
+    &:after {
+      content: "";
+      display: block;
+      margin: 0 auto 50px auto;
+      width: 80px;
+      padding-top: 24px;
+      border-bottom: 4px solid #ff9700;
+    }
+  }
+  &__grid {
+    list-style-type: none;
+    z-index: 4;
+    padding: 0;
+    margin: 0 0 60px 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 555px));
+    grid-gap: 30px;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .additional {
+    padding: 100px;
+    &__grid {
+      grid-template-columns: repeat(1, minmax(300px, 550px));
+    }
+  }
+}
+@media screen and (max-width: $screen-w--l) {
+  .additional {
+    padding: 50px;
+  }
+}
+@media screen and (max-width: $screen-w--xs) {
+  .additional {
+    padding: 30px 15px;
+    &__mark-right {
+      display: none
+    }
+    &__mark-left {
+      display: none;
+    }
+    &__title {
+      font-size: 24px;
+      line-height: 1.1;
+    }
+  }
+}

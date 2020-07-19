@@ -8,6 +8,45 @@
   border-radius: 0.5rem;
   padding: 55px;
   width: 460px;
+  &__under-text {
+    font-family: $font-family--montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: $color-gray--d10;
+    margin: 0 0 27px 0;
+    &_thanks {
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      padding-bottom: 210px;
+      max-width: 245px;
+      margin: 23px auto 0 auto;
+    }
+    &_reset {
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      padding-bottom: 80px;
+      max-width: 319px;
+      margin: 23px auto 0 auto;
+    }
+    &_recovery {
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      margin: 23px auto 34px auto;
+    }
+    &_question {
+      max-width: 319px;
+    }
+  }
+  &__link {
+    position: absolute;
+    top: 115px;
+    right: 10px;
+  }
   &__close {
     position: absolute;
     top: 20px;
@@ -19,6 +58,7 @@
     background: url("~src/images/close.svg");
   }
   &__form {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -33,12 +73,28 @@
     line-height: 20px;
     color: $color-gray--d10;
     margin-bottom: 14px;
+    &_recovery {
+      margin-bottom: 40px;
+    }
+  }
+  &__description {
+    font-family: $font-family--montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: $color-gray--d10;
+    margin: 0;
+    &_start {
+      margin: 0 auto 27px auto;
+      max-width: 319px;
+    }
   }
   &__title {
     font-family: $font-family--montserrat;
     margin: 0 auto 39px auto;
     max-width: 267px;
-    max-height: 24px;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -53,6 +109,16 @@
       padding-top: 19px;
       border-bottom: 4px solid #ff9700;
     }
+    &_reg {
+      margin-bottom: 22px;
+    }
+    &_thanks {
+      padding-top: 210px;
+      max-width: none;
+    }
+    &_reset {
+      padding-top: 90px;
+    }
   }
   &__input {
     background: #EDF6FF;
@@ -63,6 +129,10 @@
     &:focus {
       border: 2px solid #3685D7;
       box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    &_large {
+      height: 120px;
+      text-align: left;
     }
   }
   &__captcha {
@@ -81,6 +151,9 @@
     width: 100%;
     margin-bottom: 40px;
     margin-top: 40px;
+    &_reg {
+      margin: 14px 0 14px 0;
+    }
   }
   &__button {
     background: #3685D7;
@@ -115,7 +188,7 @@
       line-height: 1.1;
     }
     &__button {
-      width: 200px;
+      max-width: 250px;
     }
     &__input {
       margin-bottom: 5px;

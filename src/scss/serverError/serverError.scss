@@ -1,0 +1,33 @@
+.serverError {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 170px 0 400px 0;
+  &__title {
+    font-family: $font-family--montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: $color-dark-blue;
+    text-align: start;
+    margin: 74px 0 33px 0;
+  }
+  &__description {
+    font-family: $font-family--montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: $color-gray--d10;
+    margin: 0 0 34px 0;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .serverError {
+    padding: 50px 15px;
+
+  }
+}

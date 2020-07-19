@@ -1,11 +1,12 @@
 .header {
   background: $color-white;
   position: relative;
-
+  z-index: 10;
   &__logo {
     display: flex;
     flex-direction: row;
     align-self: center;
+    text-decoration: none;
   }
   &__logo-image {
     height: 40px;
@@ -117,6 +118,7 @@
 }
 @media screen and (max-width: 950px) {
   .header {
+    border-bottom: 1px solid $color-gray--d10;
     &__phone,
     &__lk-button,
     &__start-button {

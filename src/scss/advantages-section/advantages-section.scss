@@ -1,0 +1,66 @@
+.advantages-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 130px 0px 250px 0px;
+  max-width: 1920px;
+  margin: 0 auto;
+  align-items: center;
+  &_control {
+    background: url("~src/images/controlbg.png") center;
+    background-size: cover;
+  }
+  &_accounting {
+    background: url("~src/images/accbg.png") center;
+    background-size: cover;
+  }
+  &_sadovod {
+    background: url("~src/images/sadovod.png") center;
+    padding-bottom: 200px;
+  }
+  &__image {
+    margin-right: 218px;
+    width: 380px;
+    height: 380px;
+    &_left {
+
+    }
+    &_salary {
+      margin-right: 0;
+      max-width: 380px;
+      max-height: 380px;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .advantages-section {
+    padding: 100px;
+  }
+}
+@media screen and (max-width: $screen-w--l) {
+  .advantages-section {
+    padding: 50px;
+    flex-direction: column;
+    &__image {
+      margin-right: 0;
+    }
+    &_left {
+      flex-direction: column-reverse;
+    }
+  }
+}
+@media screen and (max-width: $screen-w--xxs) {
+  .advantages-section {
+    padding: 15px;
+    &__image {
+      width: 300px;
+      height: 300px;
+      &_left {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+
+}

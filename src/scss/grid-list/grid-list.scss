@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 100px;
+  grid-row-gap: 52px;
+  grid-column-gap: 144px;
   margin: 0 auto;
   padding: 0;
   &__element {

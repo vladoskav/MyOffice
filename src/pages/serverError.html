@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Сайт компании Мой Офис">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="<%=require('src/images/logo.svg')%>">
+    <title>500</title>
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.scss %>">
+</head>
+<body>
+<div class="page">
+    <main class="main main_serverError">
+        <section class="serverError">
+            <a href="index.html" class="header__logo">
+                <img alt="лого сайта" class="header__logo-image" src="<%=require('src/images/logo3.png')%>">
+                <p  class="header__logo-text">мой офис</p>
+            </a>
+            <h1 class="serverError__title">500: Сервис временно недоступен</h1>
+            <p class="serverError__description">Попробуйте обновить страницу позже.</p>
+            <p class="serverError__description">
+                Если вам необходимо срочно связаться с&nbsp;нами,
+                вы&nbsp;можете позвонить по&nbsp;телефону&nbsp;+7 (843) 202-21-40
+                или написать на&nbsp;электронную почту: support@moiofis.ru.
+            </p>
+        </section>
+    </main>
+</div>
+</body>
+</html>
