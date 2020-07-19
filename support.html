@@ -8,7 +8,7 @@
     <link rel="icon" href="img/logo.svg">
     <title>Инструкции и поддержка</title>
     <link rel="stylesheet" href="">
-<link href="./style.1b58df7f3eae28873d66.css" rel="stylesheet"></head>
+<link href="./style.b50b1961b5e458dee649.css" rel="stylesheet"></head>
 <body>
 <div class="page">
     <header class="header">
@@ -220,25 +220,126 @@
         </li>
     </ul>
 </footer>
-<div class="modal">
-    <div class="popup">
-        <span class="popup__close"></span>
-        <h2 class="popup__title">Войти в личный кабинет</h2>
-        <form class="popup__form">
-            <label class="popup__label">
+<div class="modal modal_lk">
+    <div class="popup popup_lk">
+        <span class="popup__close popup__close_lk"></span>
+        <h2 class="popup__title popup__title_lk">Войти в личный кабинет</h2>
+        <form class="popup__form popup__form_lk">
+            <label class="popup__label popup__label_lk">
                 Логин
-                <input class="popup__input">
+                <input class="popup__input popup__input_lk">
             </label>
-            <label class="popup__label">
+            <label class="popup__label popup__label_lk">
                 Пароль
-                <input type="password" class="popup__input">
+                <input type="password" class="popup__input popup__input_lk">
+                <a href="#" class="popup__link">Забыли?</a>
             </label>
             <label>
                 <input class="popup__captcha" placeholder="Тут встраивается ReCaptcha">
             </label>
-            <button class="popup__button">Войти</button>
+            <button class="popup__button popup__button_lk">Войти</button>
         </form>
     </div>
+</div>
+<div class="modal modal_reg">
+    <div class="popup popup_reg">
+        <span class="popup__close popup__close_reg"></span>
+        <h2 class="popup__title popup__title_reg">Регистрация</h2>
+        <form class="popup__form popup__form_reg">
+            <label class="popup__label popup__label_reg">
+                Как вас зовут?*
+                <input class="popup__input popup__input_reg">
+            </label>
+            <label class="popup__label popup__label_reg">
+                Ваш e-mail*
+                <input class="popup__input popup__input_reg">
+            </label>
+            <label class="popup__label popup__label_reg">
+                Придумайте логин*
+                <input class="popup__input popup__input_reg">
+            </label>
+            <label>
+                <input class="popup__captcha popup__captcha_reg" placeholder="Тут встраивается ReCaptcha">
+            </label>
+            <p class="popup__under-text popup__under-text_reg">
+                Нажимая кнопку “Отправить” вы даёте согласие на обработку персональных данных в соответствии с
+                <a href="policy.html" class="popup__under-text popup__under-text_reg">
+                    Политикой конфиденциальности
+                </a>
+            </p>
+            <button class="popup__button popup__button_reg">Зарегистрироваться</button>
+        </form>
+    </div>
+</div>
+<div class="modal modal_thanks">
+    <div class="popup popup_thanks">
+        <span class="popup__close popup__close_thanks"></span>
+        <h2 class="popup__title popup__title_thanks">Спасибо за регистрацию</h2>
+        <p class="popup__under-text popup__under-text_thanks">
+            Мы отправили на ваш e-mail данные для входа в систему.
+        </p>
+    </div>
+</div>
+<div class="modal modal_recovery">
+    <div class="popup popup_recovery">
+        <span class="popup__close popup__close_recovery"></span>
+        <h2 class="popup__title popup__title_recovery">Восстановление пароля</h2>
+        <p class="popup__under-text popup__under-text_recovery">
+            Введите ваш e-mail. На указанный адрес мы вышлем вам данные для восстановления пароля.
+        </p>
+        <form class="popup__form popup__form_recovery">
+            <label class="popup__label popup__label_recovery">
+                <input class="popup__input popup__input_recovery">
+            </label>
+            <button class="popup__button popup__button_recovery">Восстановить</button>
+        </form>
+    </div>
+</div>
+<div class="modal modal_reset">
+    <div class="popup popup_reset">
+        <span class="popup__close popup__close_reset"></span>
+        <h2 class="popup__title popup__title_reset">Пароль сброшен</h2>
+        <p class="popup__under-text popup__under-text_reset">
+            На ваш e-mail мы отправили данные для восстановления пароля
+        </p>
+    </div>
+</div>
+<div class="modal modal_question">
+    <div class="popup popup_question">
+        <span class="popup__close popup__close_question"></span>
+        <h2 class="popup__title popup__title_question">Задать вопрос</h2>
+        <form class="popup__form popup__form_question">
+            <label class="popup__label popup__label_question">
+                Тема вопроса?*
+                <input class="popup__input popup__input_question">
+            </label>
+            <label type="d" class="popup__label popup__label_question">
+                Ваш вопрос*
+                <textarea class="popup__input popup__input_large"></textarea>
+            </label>
+            <label class="popup__label popup__label_question">
+                Ваш e-mail*
+                <input class="popup__input popup__input_question">
+            </label>
+            <p class="popup__under-text popup__under-text_question">
+                Нажимая кнопку “Отправить” вы даёте согласие на обработку персональных данных в соответствии с
+                <a href="policy.html" class="popup__under-text popup__under-text_question">
+                    Политикой конфиденциальности
+                </a>
+            </p>
+            <button class="popup__button popup__button_question">Отправить вопрос</button>
+        </form>
+    </div>
+</div>
+<div class="modal modal_thanks modal_thanks-question">
+    <div class="popup popup_thanks">
+        <span class="popup__close popup__close_thanks"></span>
+        <h2 class="popup__title popup__title_thanks">Спасибо за ваш вопрос!</h2>
+        <p class="popup__under-text popup__under-text_thanks popup__under-text_question">
+            Наша техническая поддержка ответит вам в течение (указать время)
+        </p>
+    </div>
+</div>
 </div>
 <script type="text/javascript" src="./support.js"></script></body>
 </html>
