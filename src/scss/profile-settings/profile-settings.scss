@@ -5,6 +5,9 @@
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  &_company {
+    max-width: 800px;
+  }
   &__title-wrapper {
     background: #C8E3FF;
     padding: 18px 0 18px 0;
@@ -26,6 +29,9 @@
     max-width: 557px;
     margin: 0 auto;
     padding: 46px 0 60px 0;
+    &_company {
+      max-width: 800px;
+    }
   }
   &__label {
     margin-bottom: 38px;
@@ -46,6 +52,12 @@
     color: $color-gray--d10;
     margin: 0;
     width: 144px;
+    &_textarea {
+      padding-top: 35px;
+    }
+    &_company {
+      width: 250px;
+    }
   }
   &__next-title {
     font-family: $font-family--montserrat;
@@ -93,7 +105,11 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
+    width: 350px;
     color: $color-gray--d10;
+    &_textarea {
+      height: 90px;
+    }
     &::placeholder {
       color: inherit;
     }
@@ -117,6 +133,7 @@
     }
     &__input {
       margin: 15px 0 0 0;
+      max-width: 250px;
       &::placeholder {
         text-align: center;
       }

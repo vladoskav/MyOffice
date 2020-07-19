@@ -53,10 +53,10 @@
                         <a class="nav-bar__link nav-bar__link_mini" href="#">Партнёрская программа</a>
                     </li>
                     <li class="burger-menu__element">
-                        <a class="nav-bar__link nav-bar__link_mini" href="lkCompany.html">Настройки компании</a>
+                        <a class="nav-bar__link nav-bar__link_mini nav-bar__link_active" href="lkCompany.html">Настройки компании</a>
                     </li>
                     <li class="burger-menu__element">
-                        <a class="nav-bar__link nav-bar__link_mini nav-bar__link_active" href="lkProfile.html">Настройки профиля</a>
+                        <a class="nav-bar__link nav-bar__link_mini" href="lkProfile.html">Настройки профиля</a>
                     </li>
                 </ul>
             </nav>
@@ -95,49 +95,54 @@
                     <a class="nav-bar__link nav-bar__link_lk" href="#">Партнёрская программа</a>
                 </li>
                 <li class="nav-bar__element">
-                    <a class="nav-bar__link nav-bar__link_lk" href="lkCompany.html">Настройки компании</a>
+                    <a class="nav-bar__link nav-bar__link_lk nav-bar__link_active" href="lkCompany.html">Настройки компании</a>
                 </li>
                 <li class="nav-bar__element">
-                    <a class="nav-bar__link nav-bar__link_lk nav-bar__link_active" href="lkProfile.html">Настройки профиля</a>
+                    <a class="nav-bar__link nav-bar__link_lk" href="lkProfile.html">Настройки профиля</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main class="main main_lk">
-        <section class="profile-settings">
+        <section class="profile-settings profile-settings_company">
             <div class="profile-settings__title-wrapper">
-                <h2 class="profile-settings__title">Настройки профиля</h2>
+                <h2 class="profile-settings__title">Настройка компании</h2>
             </div>
-            <form class="profile-settings__form">
+            <form class="profile-settings__form profile-settings__form_company">
                 <label class="profile-settings__label">
-                    <p class="profile-settings__text">Логин</p>
-                    <input placeholder="@sergeyivanov"
-                           disabled class="profile-settings__input profile-settings__input_disabled">
+                    <p class="profile-settings__text profile-settings__text_company profile-settings__text_textarea">Наименование</p>
+                    <textarea class="profile-settings__input profile-settings__input_textarea"></textarea>
                 </label>
                 <label class="profile-settings__label">
-                    <p class="profile-settings__text">E-mail</p>
-                    <input placeholder=sergeyivanov@mail.ru"
-                           disabled class="profile-settings__input profile-settings__input_disabled">
-                </label>
-                <label class="profile-settings__label">
-                    <p class="profile-settings__text">Имя*</p>
+                    <p class="profile-settings__text profile-settings__text_company">ИНН</p>
                     <input class="profile-settings__input">
                 </label>
                 <label class="profile-settings__label">
-                    <p class="profile-settings__text">Фамилия*</p>
+                    <p class="profile-settings__text profile-settings__text_company">КПП</p>
                     <input class="profile-settings__input">
                 </label>
                 <label class="profile-settings__label">
-                    <p class="profile-settings__text">Телефон</p>
-                    <input class="profile-settings__input">
-                </label>
-                <h3 class="profile-settings__next-title">Вы можете сменить пароль:</h3>
-                <label class="profile-settings__label">
-                    <p class="profile-settings__text">Старый пароль</p>
+                    <p class="profile-settings__text profile-settings__text_company">Юридический адрес</p>
                     <input class="profile-settings__input">
                 </label>
                 <label class="profile-settings__label">
-                    <p class="profile-settings__text">Новый пароль</p>
+                    <p class="profile-settings__text profile-settings__text_company">Почтовый адрес</p>
+                    <input class="profile-settings__input">
+                </label>
+                <label class="profile-settings__label">
+                    <p class="profile-settings__text profile-settings__text_company">Наименование банка</p>
+                    <input class="profile-settings__input">
+                </label>
+                <label class="profile-settings__label">
+                    <p class="profile-settings__text profile-settings__text_company">БИК</p>
+                    <input class="profile-settings__input">
+                </label>
+                <label class="profile-settings__label">
+                    <p class="profile-settings__text profile-settings__text_company">Расчётный счёт</p>
+                    <input class="profile-settings__input">
+                </label>
+                <label class="profile-settings__label">
+                    <p class="profile-settings__text profile-settings__text_company">Корреспондентский счёт</p>
                     <input class="profile-settings__input">
                 </label>
                 <button class="profile-settings__button">Сохранить</button>
