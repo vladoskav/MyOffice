@@ -1,5 +1,5 @@
 import "normalize.css";
-import "src/scss/lkProgram.scss";
+import "src/scss/lk.scss";
 import Popup from "./popup";
 
 // Селекторы
@@ -80,19 +80,3 @@ recButton.addEventListener('click', (event) => {
     popupReset.open();
     popupRec.close();
 });
-
-// Аккордион
-const panel = document.querySelectorAll('.accordion__panel');
-const nextPanel = document.querySelectorAll('.accordion__panel_text');
-
-const accordion = (panel, mix) => {
-    for (let i = 0; i < panel.length; i++) {
-        panel[i].addEventListener('click', () => {
-            panel[i].nextElementSibling
-                .classList.toggle(`accordion__text-block_${mix}`);
-
-            panel[i].classList.toggle('accordion__panel_active-program')
-        })
-}};
-accordion(panel, "active");
-accordion(nextPanel, "price-active");

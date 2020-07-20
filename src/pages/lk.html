@@ -29,7 +29,7 @@
                         <a class="nav-bar__link nav-bar__link_mini" href="#">Начать работу</a>
                     </li>
                     <li class="burger-menu__element">
-                        <a class="nav-bar__link nav-bar__link_mini" href="#">Личный кабинет</a>
+                        <a class="nav-bar__link nav-bar__link_mini nav-bar__link_active" href="lk.html">Личный кабинет</a>
                     </li>
                     <li class="burger-menu__element">
                         <a class="nav-bar__link nav-bar__link_mini" href="about.html">О нас</a>
@@ -50,7 +50,7 @@
                         <a class="nav-bar__link nav-bar__link_mini" href="questions.html">Частые вопросы</a>
                     </li>
                     <li class="burger-menu__element">
-                        <a class="nav-bar__link nav-bar__link_mini nav-bar__link_active" href="lkProgram.html">Партнёрская программа</a>
+                        <a class="nav-bar__link nav-bar__link_mini" href="lkProgram.html">Партнёрская программа</a>
                     </li>
                     <li class="burger-menu__element">
                         <a class="nav-bar__link nav-bar__link_mini" href="lkCompany.html">Настройки компании</a>
@@ -89,10 +89,10 @@
         <nav class="nav-bar nav-bar_lk">
             <ul class="nav-bar__list">
                 <li class="nav-bar__element">
-                    <a class="nav-bar__link nav-bar__link_lk" href="#">Личный кабинет</a>
+                    <a class="nav-bar__link nav-bar__link_lk  nav-bar__link_active" href="lk.html">Личный кабинет</a>
                 </li>
                 <li class="nav-bar__element">
-                    <a class="nav-bar__link nav-bar__link_lk nav-bar__link_active" href="lkProgram.html">Партнёрская программа</a>
+                    <a class="nav-bar__link nav-bar__link_lk" href="lkProgram.html">Партнёрская программа</a>
                 </li>
                 <li class="nav-bar__element">
                     <a class="nav-bar__link nav-bar__link_lk" href="lkCompany.html">Настройки компании</a>
@@ -104,87 +104,142 @@
         </nav>
     </header>
     <main class="main main_lk">
-        <section class="lk-program">
-            <div class="profile-settings profile-settings_program">
-                <div class="profile-settings__title-wrapper">
-                    <h2 class="profile-settings__title">Условия партнёрской программы:</h2>
-                </div>
-                <div class="lk-program__wrapper">
-                    <p class="lk-program__description">
-                        Схема сотрудничества очень проста: вы&nbsp;приводите к&nbsp;нам клиентов,
-                        а&nbsp;мы&nbsp;выплачиваем вам&nbsp;10% от&nbsp;всех их&nbsp;платежей.
-                    </p>
-                    <p class="lk-program__description">
-                        Например, вы&nbsp;привели к&nbsp;нам 10&nbsp;клиентов,
-                        которые в&nbsp;сумме платят нам за&nbsp;использование сервиса 50&nbsp;000 руб./мес.
-                        В&nbsp;итоге вы&nbsp;получаете 5&nbsp;000 руб./мес.
-                    </p>
-                    <p class="lk-program__description">
-                        Сотрудничество с&nbsp;нами не&nbsp;ограничивается только привлечением клиентов.
-                        Мы&nbsp;готовы рассматривать любые предложения и&nbsp;варианты сотрудничества.
-                        Пишите нам: partners@moiofis.ru.
-                    </p>
-                </div>
-            </div>
-            <div class="profile-settings profile-settings_program">
-                <div class="profile-settings__title-wrapper">
-                    <h2 class="profile-settings__title">Ваше вознаграждение:</h2>
-                </div>
-                <div class="lk-program__wrapper lk-program__wrapper_sum">
-                    <p class="lk-program__description lk-program__description_bold">
-                        2 000 рублей
-                    </p>
-                    <button class="lk-program__button">Вывести средства</button>
-                </div>
-            </div>
-            <div class="profile-settings profile-settings_program profile-settings_clients">
-                <div class="profile-settings__title-wrapper">
-                    <h2 class="profile-settings__title">Список клиентов</h2>
-                </div>
-                <div class="lk-program__wrapper lk-program__wrapper_clients">
-                    <div class="lk-program__row">
-                        <p class="lk-program__title-element">Клиент</p>
-                        <p class="lk-program__title-element">Логин</p>
+        <section class="lk">
+            <div class="lk__left">
+                <div class="profile-settings profile-settings_lk">
+                    <div class="profile-settings__title-wrapper">
+                        <h2 class="profile-settings__title">Оплата</h2>
                     </div>
-                    <div class="lk-program__row lk-program__row_blue">
-                        <p class="lk-program__element">Бердымухамедов Гурбангулы</p>
-                        <p class="lk-program__element">@gurbanguliberdimuhamedov</p>
-                    </div>
-                    <div class="lk-program__row">
-                        <p class="lk-program__element">Султанова Елена</p>
-                        <p class="lk-program__element">@sultanovaelena</p>
-                    </div>
-                    <button class="lk-program__clients-button">+ Клиент</button>
-                </div>
-            </div>
-            <div class="profile-settings profile-settings_program profile-settings_history">
-                <div class="profile-settings__title-wrapper">
-                    <h2 class="profile-settings__title">История выплат</h2>
-                </div>
-                <div class="lk-program__wrapper lk-program__wrapper_history">
-                    <div class="accordion accordion_program">
-                        <div class="accordion__panel accordion__panel_program">
-                            <h3 class="accordion__title accordion__title_program">2020</h3>
+                    <div class="lk__wrapper">
+                        <div class="lk__row">
+                            <p class="lk__little-text">Период оплаты:</p>
+                            <select class="lk__select">
+                                <option value="1 месяц" class="lk__option">1 месяц</option>
+                                <option selected class="lk__option">3 месяца</option>
+                                <option class="lk__option">6 месяцев</option>
+                                <option class="lk__option">Произвольный период</option>
+                            </select>
                         </div>
-                        <div class="accordion__text-block accordion__text-block_program">
-                            <div class="accordion__panel_text">
-                                <p class="accordion__text accordion__text_program">
-                                    Май
-                                </p>
+                        <div class="lk__row">
+                            <p class="lk__little-text">К оплате:</p>
+                            <p class="lk__little-text">1 000 руб.</p>
+                        </div>
+                        <div class="lk__row">
+                            <p class="lk__little-text">Скидка:</p>
+                            <p class="lk__little-text">900 руб.</p>
+                        </div>
+                        <div class="lk__row">
+                            <p class="lk__little-text lk__little-text_bold">Итого к оплате:</p>
+                            <p class="lk__little-text">100 руб.</p>
+                        </div>
+                        <div class="lk__row">
+                            <button class="lk__button lk__button_pay">Оплатить онлайн</button>
+                            <button class="lk__button lk__button_download">Скачать счёт</button>
+                        </div>
+                        <p class="lk__little-text lk__little-text_under">
+                            Для оформления возврата необходимо написать на e-mail: support@moiofis.ru
+                        </p>
+                    </div>
+                </div>
+                <div class="profile-settings profile-settings_lk profile-settings_add">
+                    <div class="profile-settings__title-wrapper">
+                        <h2 class="profile-settings__title">Дополнительные услуги</h2>
+                    </div>
+                    <div class="lk__wrapper">
+                        <p class="lk__description">Период оплаты дополнительных услуг — 1 год</p>
+                        <div class="lk__row lk__row_blue lk__row_padding">
+                            <p class="lk__little-text lk__little-text_icon">1С Контрагент</p>
+                            <div class="lk__box">
+                                <label class="lk__label">4 800 руб./год</label>
+                                <input class="lk__checkbox" type="checkbox">
                             </div>
-                            <div class="accordion__text-block">
-                                <p class="accordion__text accordion__text_date">10.05</p>
-                                <p class="accordion__text accordion__text_price">1 000 руб.</p>
+                        </div>
+                        <div class="lk__row lk__row_padding">
+                            <p class="lk__little-text lk__little-text_icon">1С Отчётность</p>
+                            <div class="lk__box">
+                                <label class="lk__label">3 900 руб./год</label>
+                                <input class="lk__checkbox" type="checkbox">
                             </div>
-                            <div class="accordion__panel_text">
-                                <p class="accordion__text accordion__text_program">
-                                    Февраль
-                                </p>
+                        </div>
+                        <div class="lk__row lk__row_blue lk__row_padding">
+                            <p class="lk__little-text lk__little-text_icon">1С Спарк</p>
+                            <div class="lk__box">
+                                <label class="lk__label">3 900 руб./год</label>
+                                <input class="lk__checkbox" type="checkbox">
                             </div>
-                            <div class="accordion__text-block">
-                                <p class="accordion__text accordion__text_date">10.05</p>
-                                <p class="accordion__text accordion__text_price">1 000 руб.</p>
-                            </div>
+                        </div>
+                        <div class="lk__row lk__row_last">
+                            <p class="lk__little-text lk__little-text_bold">Итого к оплате:</p>
+                            <input class="lk__input" disabled placeholder="3 900 руб.">
+                        </div>
+                        <div class="lk__row lk__row_last">
+                            <button class="lk__button lk__button_pay">Оплатить онлайн</button>
+                            <button class="lk__button lk__button_download">Скачать счёт</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lk__right">
+                <div class="profile-settings profile-settings_lk profile-settings_small">
+                    <div class="profile-settings__title-wrapper">
+                        <h2 class="profile-settings__title">Начало работы</h2>
+                    </div>
+                    <div class="lk__wrapper">
+                        <div class="lk__row lk__row_start">
+                            <p class="lk__little-text lk__little-text_start">
+                                Для начала работы скачайте программу и запустите её:
+                            </p>
+                            <button class="lk__button lk__button__get-program">Скачать программу</button>
+                        </div>
+                        <a class="lk__link" href="#">Данные для техподдержки 1С:</a>
+                    </div>
+                </div>
+                <div class="profile-settings profile-settings_lk profile-settings_rates">
+                    <div class="profile-settings__title-wrapper">
+                        <h2 class="profile-settings__title">Мой тариф</h2>
+                    </div>
+                    <div class="lk__wrapper lk__wrapper_rate">
+                        <p class="lk__little-text lk__little-text_bold-mini lk__little-text_bold">Основной тариф</p>
+                        <div class="lk__row lk__row_blue lk__row_padding">
+                            <p class="lk__little-text lk__little-text_no-margin">Текущий баланс:</p>
+                            <p class="lk__little-text lk__little-text_no-margin lk__little-text_bold">
+                                3 000 руб.
+                            </p>
+                        </div>
+                        <div class="lk__row lk__row_padding">
+                            <p class="lk__little-text lk__little-text_no-margin">Подключено сотрудников:</p>
+                            <p class="lk__little-text lk__little-text_no-margin i lk__little-text_bold">
+                                2
+                            </p>
+                        </div>
+                        <div class="lk__row lk__row_blue lk__row_padding">
+                            <p class="lk__little-text lk__little-text_no-margin">Дисковое пространство:</p>
+                            <p class="lk__little-text lk__little-text_no-margin  lk__little-text_bold">
+                                2 Гб
+                            </p>
+                        </div>
+                        <div class="lk__row lk__row_padding lk__row_add">
+                            <p class="lk__little-text lk__little-text_no-margin">Доступ оплачен до:</p>
+                            <p class="lk__little-text lk__little-text_no-margin lk__little-text_bold">
+                                25.12.2020
+                            </p>
+                        </div>
+                        <p class="lk__little-text lk__little-text_bold-mini lk__little-text_bold">Дополнительные услуги</p>
+                        <div class="lk__row lk__row_padding lk__row_first">
+                            <p class=" lk__little-text  lk__little-text_bold lk__little-text_bold-mini lk__little-text_no-margin">Услуга:</p>
+                            <p class="lk__little-text lk__little-text_bold lk__little-text_bold-mini lk__little-text_no-margin">Доступно до:</p>
+                        </div>
+                        <div class="lk__row lk__row_blue lk__row_padding">
+                            <p class="lk__little-text_no-margin lk__little-text">1С Спарк</p>
+                            <p class="lk__little-text_no-margin lk__little-text">21.10.2020</p>
+                        </div>
+                        <div class="lk__row lk__row_padding">
+                            <p class="lk__little-text_no-margin lk__little-text">1С Отчётность</p>
+                            <p class="lk__little-text_no-margin lk__little-text">Не подключено</p>
+                        </div>
+                        <div class="lk__row lk__row_blue lk__row_padding">
+                            <p class="lk__little-text_no-margin lk__little-text">1С Контрагент</p>
+                            <p class="lk__little-text_no-margin lk__little-text">21.10.2020</p>
                         </div>
                     </div>
                 </div>

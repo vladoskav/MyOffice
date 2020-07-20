@@ -29,6 +29,13 @@
     position: relative;
   }
 }
+@media screen and (max-width: 1440px) {
+  .main {
+    &_lk {
+      padding: 50px 50px;
+    }
+  }
+}
 @media screen and (max-width: 768px) {
   .main {
     &_lk {
