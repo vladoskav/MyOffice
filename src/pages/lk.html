@@ -105,142 +105,276 @@
     </header>
     <main class="main main_lk">
         <section class="lk">
-            <div class="lk__left">
-                <div class="profile-settings profile-settings_lk">
-                    <div class="profile-settings__title-wrapper">
-                        <h2 class="profile-settings__title">Оплата</h2>
+            <div class="lk__upper-block">
+                <div class="lk__left">
+                    <div class="profile-settings profile-settings_lk">
+                        <div class="profile-settings__title-wrapper">
+                            <h2 class="profile-settings__title">Оплата</h2>
+                        </div>
+                        <div class="lk__wrapper">
+                            <div class="lk__row">
+                                <p class="lk__little-text">Период оплаты:</p>
+                                <select class="lk__select">
+                                    <option value="1 месяц" class="lk__option">1 месяц</option>
+                                    <option selected class="lk__option">3 месяца</option>
+                                    <option class="lk__option">6 месяцев</option>
+                                    <option class="lk__option">Произвольный период</option>
+                                </select>
+                            </div>
+                            <div class="lk__row">
+                                <p class="lk__little-text">К оплате:</p>
+                                <p class="lk__little-text">1 000 руб.</p>
+                            </div>
+                            <div class="lk__row">
+                                <p class="lk__little-text">Скидка:</p>
+                                <p class="lk__little-text">900 руб.</p>
+                            </div>
+                            <div class="lk__row">
+                                <p class="lk__little-text lk__little-text_bold">Итого к оплате:</p>
+                                <p class="lk__little-text">100 руб.</p>
+                            </div>
+                            <div class="lk__row">
+                                <button class="lk__button lk__button_pay">Оплатить онлайн</button>
+                                <button class="lk__button lk__button_download">Скачать счёт</button>
+                            </div>
+                            <p class="lk__little-text lk__little-text_under">
+                                Для оформления возврата необходимо написать на e-mail: support@moiofis.ru
+                            </p>
+                        </div>
                     </div>
-                    <div class="lk__wrapper">
-                        <div class="lk__row">
-                            <p class="lk__little-text">Период оплаты:</p>
-                            <select class="lk__select">
-                                <option value="1 месяц" class="lk__option">1 месяц</option>
-                                <option selected class="lk__option">3 месяца</option>
-                                <option class="lk__option">6 месяцев</option>
-                                <option class="lk__option">Произвольный период</option>
-                            </select>
+                    <div class="profile-settings profile-settings_lk profile-settings_add">
+                        <div class="profile-settings__title-wrapper">
+                            <h2 class="profile-settings__title">Дополнительные услуги</h2>
                         </div>
-                        <div class="lk__row">
-                            <p class="lk__little-text">К оплате:</p>
-                            <p class="lk__little-text">1 000 руб.</p>
+                        <div class="lk__wrapper">
+                            <p class="lk__description">Период оплаты дополнительных услуг — 1 год</p>
+                            <div class="lk__row lk__row_blue lk__row_padding">
+                                <p class="lk__little-text lk__little-text_icon">1С Контрагент</p>
+                                <div class="lk__box">
+                                    <label class="lk__label">4 800 руб./год</label>
+                                    <input class="lk__checkbox" type="checkbox">
+                                </div>
+                            </div>
+                            <div class="lk__row lk__row_padding">
+                                <p class="lk__little-text lk__little-text_icon">1С Отчётность</p>
+                                <div class="lk__box">
+                                    <label class="lk__label">3 900 руб./год</label>
+                                    <input class="lk__checkbox" type="checkbox">
+                                </div>
+                            </div>
+                            <div class="lk__row lk__row_blue lk__row_padding">
+                                <p class="lk__little-text lk__little-text_icon">1С Спарк</p>
+                                <div class="lk__box">
+                                    <label class="lk__label">3 900 руб./год</label>
+                                    <input class="lk__checkbox" type="checkbox">
+                                </div>
+                            </div>
+                            <div class="lk__row lk__row_last">
+                                <p class="lk__little-text lk__little-text_bold">Итого к оплате:</p>
+                                <input class="lk__input" disabled placeholder="3 900 руб.">
+                            </div>
+                            <div class="lk__row lk__row_last">
+                                <button class="lk__button lk__button_pay">Оплатить онлайн</button>
+                                <button class="lk__button lk__button_download">Скачать счёт</button>
+                            </div>
                         </div>
-                        <div class="lk__row">
-                            <p class="lk__little-text">Скидка:</p>
-                            <p class="lk__little-text">900 руб.</p>
-                        </div>
-                        <div class="lk__row">
-                            <p class="lk__little-text lk__little-text_bold">Итого к оплате:</p>
-                            <p class="lk__little-text">100 руб.</p>
-                        </div>
-                        <div class="lk__row">
-                            <button class="lk__button lk__button_pay">Оплатить онлайн</button>
-                            <button class="lk__button lk__button_download">Скачать счёт</button>
-                        </div>
-                        <p class="lk__little-text lk__little-text_under">
-                            Для оформления возврата необходимо написать на e-mail: support@moiofis.ru
-                        </p>
                     </div>
                 </div>
-                <div class="profile-settings profile-settings_lk profile-settings_add">
-                    <div class="profile-settings__title-wrapper">
-                        <h2 class="profile-settings__title">Дополнительные услуги</h2>
+                <div class="lk__right">
+                    <div class="profile-settings profile-settings_lk profile-settings_small">
+                        <div class="profile-settings__title-wrapper">
+                            <h2 class="profile-settings__title">Начало работы</h2>
+                        </div>
+                        <div class="lk__wrapper">
+                            <div class="lk__row lk__row_start">
+                                <p class="lk__little-text lk__little-text_start">
+                                    Для начала работы скачайте программу и запустите её:
+                                </p>
+                                <button class="lk__button lk__button__get-program">Скачать программу</button>
+                            </div>
+                            <a class="lk__link" href="#">Данные для техподдержки 1С:</a>
+                        </div>
                     </div>
-                    <div class="lk__wrapper">
-                        <p class="lk__description">Период оплаты дополнительных услуг — 1 год</p>
-                        <div class="lk__row lk__row_blue lk__row_padding">
-                            <p class="lk__little-text lk__little-text_icon">1С Контрагент</p>
-                            <div class="lk__box">
-                                <label class="lk__label">4 800 руб./год</label>
-                                <input class="lk__checkbox" type="checkbox">
+                    <div class="profile-settings profile-settings_lk profile-settings_rates">
+                        <div class="profile-settings__title-wrapper">
+                            <h2 class="profile-settings__title">Мой тариф</h2>
+                        </div>
+                        <div class="lk__wrapper lk__wrapper_rate">
+                            <p class="lk__little-text lk__little-text_bold-mini lk__little-text_bold">Основной тариф</p>
+                            <div class="lk__row lk__row_blue lk__row_padding">
+                                <p class="lk__little-text lk__little-text_no-margin">Текущий баланс:</p>
+                                <p class="lk__little-text lk__little-text_no-margin lk__little-text_bold">
+                                    3 000 руб.
+                                </p>
                             </div>
-                        </div>
-                        <div class="lk__row lk__row_padding">
-                            <p class="lk__little-text lk__little-text_icon">1С Отчётность</p>
-                            <div class="lk__box">
-                                <label class="lk__label">3 900 руб./год</label>
-                                <input class="lk__checkbox" type="checkbox">
+                            <div class="lk__row lk__row_padding">
+                                <p class="lk__little-text lk__little-text_no-margin">Подключено сотрудников:</p>
+                                <p class="lk__little-text lk__little-text_no-margin i lk__little-text_bold">
+                                    2
+                                </p>
                             </div>
-                        </div>
-                        <div class="lk__row lk__row_blue lk__row_padding">
-                            <p class="lk__little-text lk__little-text_icon">1С Спарк</p>
-                            <div class="lk__box">
-                                <label class="lk__label">3 900 руб./год</label>
-                                <input class="lk__checkbox" type="checkbox">
+                            <div class="lk__row lk__row_blue lk__row_padding">
+                                <p class="lk__little-text lk__little-text_no-margin">Дисковое пространство:</p>
+                                <p class="lk__little-text lk__little-text_no-margin  lk__little-text_bold">
+                                    2 Гб
+                                </p>
                             </div>
-                        </div>
-                        <div class="lk__row lk__row_last">
-                            <p class="lk__little-text lk__little-text_bold">Итого к оплате:</p>
-                            <input class="lk__input" disabled placeholder="3 900 руб.">
-                        </div>
-                        <div class="lk__row lk__row_last">
-                            <button class="lk__button lk__button_pay">Оплатить онлайн</button>
-                            <button class="lk__button lk__button_download">Скачать счёт</button>
+                            <div class="lk__row lk__row_padding lk__row_add">
+                                <p class="lk__little-text lk__little-text_no-margin">Доступ оплачен до:</p>
+                                <p class="lk__little-text lk__little-text_no-margin lk__little-text_bold">
+                                    25.12.2020
+                                </p>
+                            </div>
+                            <p class="lk__little-text lk__little-text_bold-mini lk__little-text_bold">Дополнительные услуги</p>
+                            <div class="lk__row lk__row_padding lk__row_first">
+                                <p class=" lk__little-text  lk__little-text_bold lk__little-text_bold-mini lk__little-text_no-margin">Услуга:</p>
+                                <p class="lk__little-text lk__little-text_bold lk__little-text_bold-mini lk__little-text_no-margin">Доступно до:</p>
+                            </div>
+                            <div class="lk__row lk__row_blue lk__row_padding">
+                                <p class="lk__little-text_no-margin lk__little-text">1С Спарк</p>
+                                <p class="lk__little-text_no-margin lk__little-text">21.10.2020</p>
+                            </div>
+                            <div class="lk__row lk__row_padding">
+                                <p class="lk__little-text_no-margin lk__little-text">1С Отчётность</p>
+                                <p class="lk__little-text_no-margin lk__little-text">Не подключено</p>
+                            </div>
+                            <div class="lk__row lk__row_blue lk__row_padding">
+                                <p class="lk__little-text_no-margin lk__little-text">1С Контрагент</p>
+                                <p class="lk__little-text_no-margin lk__little-text">21.10.2020</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="lk__right">
-                <div class="profile-settings profile-settings_lk profile-settings_small">
-                    <div class="profile-settings__title-wrapper">
-                        <h2 class="profile-settings__title">Начало работы</h2>
-                    </div>
-                    <div class="lk__wrapper">
-                        <div class="lk__row lk__row_start">
-                            <p class="lk__little-text lk__little-text_start">
-                                Для начала работы скачайте программу и запустите её:
-                            </p>
-                            <button class="lk__button lk__button__get-program">Скачать программу</button>
+            <div class="profile-settings profile-settings_row">
+                <div class="profile-settings__title-wrapper">
+                    <h2 class="profile-settings__title">Управление дисковым пространством</h2>
+                </div>
+                <div class="lk__wrapper lk__wrapper_control">
+                    <div class="control-lk">
+                        <div class="control-lk__engaged">
+                            <p class="control-lk__sign">Занято:</p>
+                            <p class="control-lk__sign control-lk__sign_bold">5 Гб</p>
                         </div>
-                        <a class="lk__link" href="#">Данные для техподдержки 1С:</a>
+                        <div class="control-lk__line">
+                            <div class="control-lk__line control-lk__line_blue"></div>
+                        </div>
+                        <div class="control-lk__row">
+                            <p class="control-lk__sign control-lk__sing_row">
+                                Дополнительное дисковое пространство
+                            </p>
+                            <div class="calculate-block__count-block calculate-block__count-block_lk">
+                                <div class="calculate-block__minus calculate-block__minus_lk">
+                                    <img class="calculate-block__minus-icon" src="<%=require('src/images/lineMinus.svg')%>">
+                                </div>
+                                <p class="calculate-block__number calculate-block__number_lk">5 Гб</p>
+                                <div class="calculate-block__minus calculate-block__minus_lk">
+                                    <img class="calculate-block__minus-icon" src="<%=require('src/images/lineMinus.svg')%>">
+                                    <img class="calculate-block__minus-icon_plus"
+                                         src="<%=require('src/images/lineMinus.svg')%>"
+                                    >
+                                </div>
+                            </div>
+                            <div class="control-lk__pay">
+                                <p class="control-lk__sign control-lk__sign_pay">Доплата:</p>
+                                <p class="control-lk__sign">95 руб./мес</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="profile-settings profile-settings_lk profile-settings_rates">
-                    <div class="profile-settings__title-wrapper">
-                        <h2 class="profile-settings__title">Мой тариф</h2>
+            </div>
+            <div class="profile-settings profile-settings_row">
+                <div class="profile-settings__title-wrapper">
+                    <h2 class="profile-settings__title">Активные сотрудники</h2>
+                </div>
+                <div class="lk__wrapper lk__wrapper_employees-active">
+                    <div class="employees">
+                        <div class="employees__row employees__row_titles">
+                            <p class="employees__title">Сотрудник</p>
+                            <p class="employees__title">Логин</p>
+                            <p class="employees__title">E-mail</p>
+                        </div>
+                        <div class="employees__row">
+                            <p class="employees__text">Бердымухамедов Гурбангулы</p>
+                            <p class="employees__text">@berdimuhamedovgurbanguli</p>
+                            <p class="employees__text">berdimuhamedovgurbanguli@mail.ru</p>
+                            <div class="employees__icons">
+                                <img class="employees__icon employees__icon_stop" src="<%=require('src/images/stop.svg')%>">
+                                <img class="employees__icon employees__icon_edit" src="<%=require('src/images/edit.svg')%>">
+                                <img class="employees__icon employees__icon_delete" src="<%=require('src/images/delete.svg')%>">
+                            </div>
+                        </div>
+                        <div class="employees__row">
+                            <p class="employees__text">Бердымухамедов Гурбангулы</p>
+                            <p class="employees__text">@berdimuhamedovgurbanguli</p>
+                            <p class="employees__text">berdimuhamedovgurbanguli@mail.ru</p>
+                            <div class="employees__icons">
+                                <img class="employees__icon employees__icon_stop" src="<%=require('src/images/stop.svg')%>">
+                                <img class="employees__icon employees__icon_edit" src="<%=require('src/images/edit.svg')%>">
+                                <img class="employees__icon employees__icon_delete" src="<%=require('src/images/delete.svg')%>">
+                            </div>
+                        </div>
+                        <button class="employees__add-button">+ Сотрудник</button>
                     </div>
-                    <div class="lk__wrapper lk__wrapper_rate">
-                        <p class="lk__little-text lk__little-text_bold-mini lk__little-text_bold">Основной тариф</p>
-                        <div class="lk__row lk__row_blue lk__row_padding">
-                            <p class="lk__little-text lk__little-text_no-margin">Текущий баланс:</p>
-                            <p class="lk__little-text lk__little-text_no-margin lk__little-text_bold">
-                                3 000 руб.
+                </div>
+            </div>
+            <div class="profile-settings profile-settings_row">
+                <div class="profile-settings__title-wrapper">
+                    <h2 class="profile-settings__title">Отключенные сотрудники</h2>
+                </div>
+                <div class="lk__wrapper lk__wrapper_employees-deleted">
+                    <div class="employees">
+                        <div class="employees__row employees__row_titles employees__row_deleted">
+                            <p class="employees__title">Сотрудник</p>
+                            <p class="employees__title">Логин</p>
+                            <p class="employees__title">E-mail</p>
+                        </div>
+                        <div class="employees__row employees__row_deleted">
+                            <p class="employees__text">Бердымухамедов Гурбангулы</p>
+                            <p class="employees__text">@berdimuhamedovgurbanguli</p>
+                            <p class="employees__text">berdimuhamedovgurbanguli@mail.ru</p>
+                            <a href="#" class="employees__restore">Восстановить</a>
+                        </div>
+                        <div class="employees__row employees__row_deleted">
+                            <p class="employees__text">Бердымухамедов Гурбангулы</p>
+                            <p class="employees__text">@berdimuhamedovgurbanguli</p>
+                            <p class="employees__text">berdimuhamedovgurbanguli@mail.ru</p>
+                            <a href="#" class="employees__restore">Восстановить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-settings profile-settings_row">
+                <div class="profile-settings__title-wrapper">
+                    <h2 class="profile-settings__title">Транзакции</h2>
+                </div>
+                <div class="lk__wrapper lk__wrapper_employees-deleted">
+                    <div class="accordion__panel_text accordion__panel_border">
+                        <p class="accordion__text accordion__text_program">
+                            Просмотр транзакций за сегодня
+                        </p>
+                    </div>
+                    <div class="accordion__text-block accordion__text-block_border">
+                        <div class="accordion__row">
+                            <p class="accordion__text accordion__text_date">10:35</p>
+                            <p class="accordion__text accordion__text_description">Внесён платёж за май</p>
+                            <p class="accordion__text accordion__text_price">+ 1 000 руб.</p>
+                        </div>
+                        <div class="accordion__row">
+                            <p class="accordion__text accordion__text_date">12:35</p>
+                            <p class="accordion__text accordion__text_description">
+                                Оплата за пользователя @sultanovaelena
                             </p>
+                            <p class="accordion__text accordion__text_price accordion__text_pay">- 35 руб.</p>
                         </div>
-                        <div class="lk__row lk__row_padding">
-                            <p class="lk__little-text lk__little-text_no-margin">Подключено сотрудников:</p>
-                            <p class="lk__little-text lk__little-text_no-margin i lk__little-text_bold">
-                                2
-                            </p>
-                        </div>
-                        <div class="lk__row lk__row_blue lk__row_padding">
-                            <p class="lk__little-text lk__little-text_no-margin">Дисковое пространство:</p>
-                            <p class="lk__little-text lk__little-text_no-margin  lk__little-text_bold">
-                                2 Гб
-                            </p>
-                        </div>
-                        <div class="lk__row lk__row_padding lk__row_add">
-                            <p class="lk__little-text lk__little-text_no-margin">Доступ оплачен до:</p>
-                            <p class="lk__little-text lk__little-text_no-margin lk__little-text_bold">
-                                25.12.2020
-                            </p>
-                        </div>
-                        <p class="lk__little-text lk__little-text_bold-mini lk__little-text_bold">Дополнительные услуги</p>
-                        <div class="lk__row lk__row_padding lk__row_first">
-                            <p class=" lk__little-text  lk__little-text_bold lk__little-text_bold-mini lk__little-text_no-margin">Услуга:</p>
-                            <p class="lk__little-text lk__little-text_bold lk__little-text_bold-mini lk__little-text_no-margin">Доступно до:</p>
-                        </div>
-                        <div class="lk__row lk__row_blue lk__row_padding">
-                            <p class="lk__little-text_no-margin lk__little-text">1С Спарк</p>
-                            <p class="lk__little-text_no-margin lk__little-text">21.10.2020</p>
-                        </div>
-                        <div class="lk__row lk__row_padding">
-                            <p class="lk__little-text_no-margin lk__little-text">1С Отчётность</p>
-                            <p class="lk__little-text_no-margin lk__little-text">Не подключено</p>
-                        </div>
-                        <div class="lk__row lk__row_blue lk__row_padding">
-                            <p class="lk__little-text_no-margin lk__little-text">1С Контрагент</p>
-                            <p class="lk__little-text_no-margin lk__little-text">21.10.2020</p>
-                        </div>
+                    </div>
+                    <div class="transactions">
+                        <p class="transactions__text">Скачать детализацию счёта:</p>
+                        <label class="transactions__label">с</label>
+                        <input class="transactions__input">
+                        <label class="transactions__label">по</label>
+                        <input class="transactions__input">
+                        <button class="transactions__button">Скачать отчёт</button>
                     </div>
                 </div>
             </div>

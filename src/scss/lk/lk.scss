@@ -1,9 +1,16 @@
 .lk {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  &__upper-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
   &__left {
     display: flex;
     flex-direction: column;
@@ -16,8 +23,17 @@
     padding: 31px 50px 41px 50px;
     display: flex;
     flex-direction: column;
+    &_control {
+      padding: 37px 15px 48px 15px;
+    }
     &_rate {
       padding-bottom: 38px;
+    }
+    &_employees-active {
+      padding: 19px 28px;
+    }
+    &_employees-deleted {
+      padding: 19px 28px 53px 28px;
     }
   }
   &__row {

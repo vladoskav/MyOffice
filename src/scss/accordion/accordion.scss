@@ -19,11 +19,20 @@
     }
     &_price-active {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
       padding: 12px 12px 12px 80px;
-      position: relative;
     }
+    &_border {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);;
+    }
+  }
+  &__row {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
   }
   &__title {
     font-family: $font-family--montserrat;
@@ -70,6 +79,10 @@
         transform: rotate(-90deg);
       }
     }
+    &_border {
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
     &_active-program {
       margin-bottom: 0;
       &:before {
@@ -91,24 +104,33 @@
     line-height: 20px;
     color: $color-dark-blue;
     margin: 16px 0 0 0;
+    width: 33%;
     &_price {
       font-size: 18px;
       line-height: 22px;
       color: #125A00;
       margin: 0;
+      text-align: right;
+    }
+    &_pay {
+      color: #990000;
     }
     &_date {
       font-size: 18px;
       line-height: 22px;
       color: $color-gray--d10;
-      margin: 0 180px 0 0;
-      &:before {
-        content: url("~src/images/unList.svg");
-        position: absolute;
-        top: 0;
-        left: 60px;
-        margin-right: 20px;
+      margin: 0 0 0 0;
+        &:before {
+          content: url("~src/images/unList.svg");
+          position: absolute;
+          top:-15px;
+          left: -20px;
+          margin-right: 20px;
       }
+    }
+    &_description {
+      margin: 0;
+      width: 50%;
     }
     &_program {
       font-size: 18px;
