@@ -10,7 +10,6 @@ const burgerMenu = document.querySelector('.burger-menu');
 const main = document.querySelector('.main');
 const modalLk = document.querySelector('.modal_lk');
 const popupCloseLk = document.querySelector('.popup__close_lk');
-const lkLink = document.querySelector('.nav-bar__link_lk');
 const startWorkButton = document.querySelector('.header__start-button');
 const modalReg = document.querySelector('.modal_reg');
 const popupCloseReg = document.querySelector('.popup__close_reg');
@@ -20,6 +19,8 @@ const popupLink = document.querySelector('.popup__link');
 const modalRec = document.querySelector('.modal_recovery');
 const recButton = document.querySelector('.popup__button_recovery');
 const modalReset = document.querySelector('.modal_reset');
+const startLink = document.querySelector('.nav-bar__link_start');
+
 // Открытие личного кабинета
 const popupLk = new Popup(modalLk, popupCloseLk);
 
@@ -28,18 +29,15 @@ lkButton.addEventListener('click', () => {
     popupLk.open();
 });
 
-lkLink.addEventListener('click', () => {
-    popupLk.open();
-    burgerMenu.classList.remove('burger-menu_opened');
-
-});
-
 // Открытие регистрации
 const popupReg = new Popup(modalReg, popupCloseReg);
 
 startWorkButton.addEventListener('click', () => {
     popupReg.open();
 
+});
+startLink.addEventListener('click', () => {
+    popupReg.open();
 });
 
 // Открытие мобильного меню
@@ -96,3 +94,80 @@ const accordion = (panel, mix) => {
     }};
 accordion(panel, "active");
 accordion(nextPanel, "price-active");
+
+// Попапы в ЛК
+ const techLink = document.querySelector('.lk__link');
+ const modalTech = document.querySelector('.modal_tech-support');
+ const closeSupport = document.querySelector('.popup__close_tech-support');
+
+ const popupTech = new Popup(modalTech, closeSupport);
+
+ techLink.addEventListener('click', () => {
+     popupTech.open();
+ });
+
+ const editEmployee = document.querySelectorAll('.employees__icon_edit');
+ const modalEdit = document.querySelector('.modal_edit-employee');
+ const closeEdit = document.querySelector('.popup__close_edit-employee');
+ const modalSuccessEdit = document.querySelector('.modal_success');
+ const popupEditEmployee = new Popup(modalEdit, closeEdit);
+ const saveEdit = document.querySelector('.popup__button_edit-employee');
+
+ editEmployee.forEach((item) => {
+     item.addEventListener('click', () => {
+         popupEditEmployee.open();
+     })
+ });
+
+ const popupEditSuccess = new Popup(modalSuccessEdit, closeEdit);
+
+ saveEdit.addEventListener('click', (event) => {
+     event.preventDefault();
+     popupEditSuccess.open();
+     popupEditEmployee.close();
+ }
+);
+
+ const addEmployee = document.querySelector('.employees__add-button');
+ const modalNewEmployee = document.querySelector('.modal_new-employee');
+ const closeNew = document.querySelector('.popup__close_new-employee');
+
+ const popupNewEmployee = new Popup(modalNewEmployee, closeNew);
+
+ addEmployee.addEventListener('click', () => {
+     popupNewEmployee.open();
+ });
+
+ const saveNew = document.querySelector('.popup__button_new-employee');
+ const modalSuccessNew = document.querySelector('.modal_new-success');
+
+ const popupNewSuccess = new Popup(modalSuccessNew, closeNew);
+
+ saveNew.addEventListener('click', (event) => {
+     event.preventDefault();
+     popupNewSuccess.open();
+     popupNewEmployee.close();
+ });
+
+ const deleteEmployee = document.querySelectorAll('.employees__icon_delete');
+ const modalDeleteEmployee = document.querySelector('.modal_delete-employee');
+ const closeDelete = document.querySelector('.popup__close_delete-employee');
+
+ const popupDeleteEmployee = new Popup(modalDeleteEmployee, closeDelete);
+
+ deleteEmployee.forEach((item) => {
+     item.addEventListener('click', () => {
+         popupDeleteEmployee.open();
+     });
+ });
+
+ const confirmDelete = document.querySelector('.popup__button_delete-employee');
+ const modalSuccessDelete = document.querySelector('.modal_delete-success');
+
+ const popupSuccessDelete = new Popup(modalSuccessDelete, closeDelete);
+
+ confirmDelete.addEventListener('click', (event) => {
+     event.preventDefault();
+     popupSuccessDelete.open();
+     popupDeleteEmployee.close();
+ });

@@ -125,7 +125,6 @@
           position: absolute;
           top:-15px;
           left: -20px;
-          margin-right: 20px;
       }
     }
     &_description {
@@ -140,11 +139,48 @@
     }
     }
 }
+@media screen and (max-width: 900px) {
+  .accordion {
+    &__text {
+      &_lk {
+        width: 100%;
+      }
+      &_date {
+        &:before {
+          left: -30px;
+          top: -13px;
+        }
+      }
+    }
+    &__panel {
+      &_border {
+        padding: 15px;
+      }
+    }
+  }
+}
 @media screen and (max-width: 600px) {
   .accordion {
     &__panel {
       &_program {
         width: 250px;
+      }
+    }
+    &__text {
+      &_date {
+        margin: 0 0 15px 0;
+      }
+      &_price {
+        text-align: left;
+      }
+      &_description {
+        margin: 0 0 15px 0;
+      }
+    }
+    &__row {
+      &_lk {
+        flex-direction: column;
+        margin-bottom: 40px;
       }
     }
     &__text {
@@ -161,8 +197,15 @@
       &_program {
         width: 200px;
       }
+      &_border {
+        padding: 10px;
+        &:before {
+          transform: none;
+        }
+      }
     }
     &__text {
+      width: initial;
       &_date {
         margin-right: 10px;
       }

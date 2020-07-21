@@ -26,7 +26,7 @@
                         </a>
                     </li>
                     <li class="burger-menu__element">
-                        <a class="nav-bar__link nav-bar__link_mini" href="#">Начать работу</a>
+                        <a class="nav-bar__link nav-bar__link_start nav-bar__link_mini" href="#">Начать работу</a>
                     </li>
                     <li class="burger-menu__element">
                         <a class="nav-bar__link nav-bar__link_mini nav-bar__link_active" href="lk.html">Личный кабинет</a>
@@ -260,7 +260,7 @@
                             <div class="control-lk__line control-lk__line_blue"></div>
                         </div>
                         <div class="control-lk__row">
-                            <p class="control-lk__sign control-lk__sing_row">
+                            <p class="control-lk__sign control-lk__sign_row">
                                 Дополнительное дисковое пространство
                             </p>
                             <div class="calculate-block__count-block calculate-block__count-block_lk">
@@ -283,7 +283,7 @@
                     </div>
                 </div>
             </div>
-            <div class="profile-settings profile-settings_row">
+            <div class="profile-settings profile-settings_row profile-settings_employees">
                 <div class="profile-settings__title-wrapper">
                     <h2 class="profile-settings__title">Активные сотрудники</h2>
                 </div>
@@ -318,7 +318,7 @@
                     </div>
                 </div>
             </div>
-            <div class="profile-settings profile-settings_row">
+            <div class="profile-settings profile-settings_row profile-settings_employees">
                 <div class="profile-settings__title-wrapper">
                     <h2 class="profile-settings__title">Отключенные сотрудники</h2>
                 </div>
@@ -350,17 +350,17 @@
                 </div>
                 <div class="lk__wrapper lk__wrapper_employees-deleted">
                     <div class="accordion__panel_text accordion__panel_border">
-                        <p class="accordion__text accordion__text_program">
+                        <p class="accordion__text accordion__text_program accordion__text_lk">
                             Просмотр транзакций за сегодня
                         </p>
                     </div>
                     <div class="accordion__text-block accordion__text-block_border">
-                        <div class="accordion__row">
+                        <div class="accordion__row accordion__row_lk">
                             <p class="accordion__text accordion__text_date">10:35</p>
                             <p class="accordion__text accordion__text_description">Внесён платёж за май</p>
                             <p class="accordion__text accordion__text_price">+ 1 000 руб.</p>
                         </div>
-                        <div class="accordion__row">
+                        <div class="accordion__row accordion__row_lk">
                             <p class="accordion__text accordion__text_date">12:35</p>
                             <p class="accordion__text accordion__text_description">
                                 Оплата за пользователя @sultanovaelena
@@ -552,6 +552,95 @@
             <p class="popup__under-text popup__under-text_reset">
                 На ваш e-mail мы отправили данные для восстановления пароля
             </p>
+        </div>
+    </div>
+    <div class="modal modal_tech-support">
+        <div class="popup popup_tech-support">
+            <span class="popup__close popup__close_tech-support"></span>
+            <h2 class="popup__title popup__title_tech-support">Данные для техподдержки 1С</h2>
+            <p class="popup__tech-support popup__tech-support_title">
+                Логин в 1с:
+            </p>
+            <p class="popup__tech-support">
+                gurbalguli.berdimukhamedov.m6326@moiofis
+            </p>
+            <p class="popup__tech-support popup__tech-support_title">
+                Пароль:
+            </p>
+            <p class="popup__tech-support">
+                XMX2B60S
+            </p>
+            <p class="popup__tech-support">
+                Эти данные вам понадобятся для подтверждения легальности программ 1С
+            </p>
+        </div>
+    </div>
+    <div class="modal modal_edit-employee">
+        <div class="popup popup_edit-employee">
+            <span class="popup__close popup__close_edit-employee"></span>
+            <h2 class="popup__title popup__title_edit-employee">Редактирование данных сотрудника</h2>
+            <form class="popup__form popup__form_edit-employee">
+                <label class="popup__label popup__label_edit-employee">
+                    Имя сотрудника
+                    <input class="popup__input popup__input_edit-employee">
+                </label>
+                <label class="popup__label popup__label_edit-employee">
+                    E-mail
+                    <input class="popup__input popup__input_edit-employee">
+                </label>
+                <label class="popup__label popup__label_edit-employee">
+                    Новый пароль
+                    <input type="password" class="popup__input popup__input_edit-employee">
+                </label>
+                <button class="popup__button popup__button_edit-employee">Сохранить</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal modal_success">
+        <div class="popup popup_success">
+            <span class="popup__close popup__close_success"></span>
+            <h2 class="popup__title popup__title_success">Данные успешно сохранены!</h2>
+        </div>
+    </div>
+    <div class="modal modal_new-employee">
+        <div class="popup popup_new-employee">
+            <span class="popup__close popup__close_new-employee"></span>
+            <h2 class="popup__title popup__title_new-employee">Новый сотрудник</h2>
+            <form class="popup__form popup__form_new-employee">
+                <label class="popup__label popup__label_new-employee">
+                    Имя сотрудника
+                    <input class="popup__input popup__input_new-employee">
+                </label>
+                <label class="popup__label popup__label_new-employee">
+                    E-mail
+                    <input class="popup__input popup__input_new-employee">
+                </label>
+                <button class="popup__button popup__button_new-employee">Сохранить</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal modal_new-success">
+        <div class="popup popup_success">
+            <span class="popup__close popup__close_new-success"></span>
+            <h2 class="popup__title popup__title_success">Сотрудник успешно добавлен!</h2>
+        </div>
+    </div>
+    <div class="modal modal_delete-employee">
+        <div class="popup popup_delete-employee">
+            <span class="popup__close popup__close_delete-employee"></span>
+            <h2 class="popup__title popup__title_delete-employee">
+                Вы уверены, что хотите удалить сотрудника?
+            </h2>
+            <div class="popup__button-container">
+                <button class="popup__button popup__button_delete-employee">Удалить</button>
+                <button class="popup__button popup__button_cancel">Отмена</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal_delete-success">
+        <div class="popup popup_delete-success">
+            <span class="popup__close popup__close_delete-success"></span>
+            <h2 class="popup__title popup__title_delete-success">Сотрудник удалён!</h2>
         </div>
     </div>
 </div>

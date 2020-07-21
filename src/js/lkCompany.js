@@ -11,7 +11,6 @@ const burgerMenu = document.querySelector('.burger-menu');
 const main = document.querySelector('.main');
 const modalLk = document.querySelector('.modal_lk');
 const popupCloseLk = document.querySelector('.popup__close_lk');
-const lkLink = document.querySelector('.nav-bar__link_lk');
 const startWorkButton = document.querySelector('.header__start-button');
 const modalReg = document.querySelector('.modal_reg');
 const popupCloseReg = document.querySelector('.popup__close_reg');
@@ -27,12 +26,6 @@ const popupLk = new Popup(modalLk, popupCloseLk);
 
 lkButton.addEventListener('click', () => {
     popupLk.open();
-});
-
-lkLink.addEventListener('click', () => {
-    popupLk.open();
-    burgerMenu.classList.remove('burger-menu_opened');
-
 });
 
 // Открытие регистрации

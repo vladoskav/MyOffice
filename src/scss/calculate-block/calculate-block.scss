@@ -126,6 +126,15 @@
     margin-bottom: 30px;
   }
 }
+@media screen and (max-width: 768px) {
+  .calculate-block {
+    &__count-block {
+      &_lk {
+        margin: 0 0 15px 0;
+      }
+    }
+  }
+}
 @media screen and (max-width: 475px) {
   .calculate-block {
     padding: 15px;
