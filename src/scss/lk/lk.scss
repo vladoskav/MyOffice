@@ -234,7 +234,7 @@
     background-size: contain;
     -moz-appearance: none;
     -webkit-appearance: none;
-    padding: 5px 0 5px 5px;
+    padding: 5px 40px 5px 5px;
     outline: none;
     cursor: pointer;
     &::-ms-expand {
@@ -250,10 +250,11 @@
     font-weight: normal;
     font-size: 15px;
     line-height: 18px;
+    padding: 5px 40px 5px 5px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
     &:focus {
       background: #EDF6FF;
-      width: 100px;
-
     }
     &:hover {
       background: #EDF6FF;
