@@ -45,7 +45,9 @@
     }
   }
   &__upper-menu {
-    padding: 20px 180px;
+    padding: 20px;
+    max-width: 1140px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -185,13 +187,6 @@
     }
     &:focus {
       outline: none;
-    }
-  }
-}
-@media screen and (min-width: $screen-w--xxl) {
-  .header {
-    &__upper-menu {
-      padding: 20px 200px;
     }
   }
 }
