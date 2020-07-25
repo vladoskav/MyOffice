@@ -3,6 +3,7 @@ import "normalize.css";
 import "src/scss/index.scss";
 import Swiper, { Navigation, Pagination } from "swiper";
 import Popup from "./popup";
+
 // Свайпер
 Swiper.use([Navigation, Pagination]);
 
@@ -13,18 +14,13 @@ const mySwiper = new Swiper('.swiper-container', {
     slidesPerColumn: 1,
     centeredSlides: true,
 
-    // If we need pagination
     pagination: {
         el: '.swiper-pagination',
     },
-
-    // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-
-    // And if we need scrollbar
     scrollbar: {
         el: '.swiper-scrollbar',
     },
@@ -47,6 +43,10 @@ const popupLink = document.querySelector('.popup__link');
 const modalRec = document.querySelector('.modal_recovery');
 const recButton = document.querySelector('.popup__button_recovery');
 const modalReset = document.querySelector('.modal_reset');
+const closeThanks = document.querySelector('.popup__close_thanks');
+const closeReset = document.querySelector('.popup__close_reset');
+const closeRec = document.querySelector('.popup__close_recovery');
+
 // Открытие личного кабинета
 const popupLk = new Popup(modalLk, popupCloseLk);
 
@@ -81,7 +81,7 @@ main.addEventListener('click', () => {
 
 // Открытие формы спасибо
 
-const popupThanks = new Popup(thanksPopup, popupCloseReg);
+const popupThanks = new Popup(thanksPopup, closeThanks);
 
 confirmButton.addEventListener('click', (event) => {
     event.preventDefault();
@@ -91,7 +91,7 @@ confirmButton.addEventListener('click', (event) => {
 
 // Открытие восстановления пароля
 
-const popupRec = new Popup(modalRec, popupCloseReg);
+const popupRec = new Popup(modalRec, closeRec);
 
 popupLink.addEventListener('click', () => {
     popupLk.close();
@@ -100,7 +100,7 @@ popupLink.addEventListener('click', () => {
 });
 
 // Пароль восстановлен
-const popupReset = new Popup(modalReset, popupCloseReg);
+const popupReset = new Popup(modalReset, closeReset);
 
 recButton.addEventListener('click', (event) => {
     event.preventDefault();

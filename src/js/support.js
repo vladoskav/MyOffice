@@ -18,6 +18,9 @@ const popupLink = document.querySelector('.popup__link');
 const modalRec = document.querySelector('.modal_recovery');
 const recButton = document.querySelector('.popup__button_recovery');
 const modalReset = document.querySelector('.modal_reset');
+const closeThanks = document.querySelector('.popup__close_thanks');
+const closeReset = document.querySelector('.popup__close_reset');
+const closeRec = document.querySelector('.popup__close_recovery');
 
 // Поддержка
 const getSupport = document.querySelector('.support__bottom-button');
@@ -59,7 +62,7 @@ main.addEventListener('click', () => {
 
 // Открытие формы спасибо
 
-const popupThanks = new Popup(thanksPopup, popupCloseReg);
+const popupThanks = new Popup(thanksPopup, closeThanks);
 
 confirmButton.addEventListener('click', (event) => {
     event.preventDefault();
@@ -69,7 +72,7 @@ confirmButton.addEventListener('click', (event) => {
 
 // Открытие восстановления пароля
 
-const popupRec = new Popup(modalRec, popupCloseReg);
+const popupRec = new Popup(modalRec, closeRec);
 
 popupLink.addEventListener('click', () => {
     popupLk.close();
@@ -78,7 +81,7 @@ popupLink.addEventListener('click', () => {
 });
 
 // Пароль восстановлен
-const popupReset = new Popup(modalReset, popupCloseReg);
+const popupReset = new Popup(modalReset, closeReset);
 
 recButton.addEventListener('click', (event) => {
     event.preventDefault();

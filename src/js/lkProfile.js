@@ -7,14 +7,15 @@ import Popup from "./popup";
 const burgerButton = document.querySelector('.burger-menu__button');
 const burgerMenu = document.querySelector('.burger-menu');
 const main = document.querySelector('.main');
-const popupCloseReg = document.querySelector('.popup__close_reg');
 const confirmButton = document.querySelector('.popup__button_reg');
 const thanksPopup = document.querySelector('.modal_thanks');
 const popupLink = document.querySelector('.popup__link');
 const modalRec = document.querySelector('.modal_recovery');
 const recButton = document.querySelector('.popup__button_recovery');
 const modalReset = document.querySelector('.modal_reset');
-
+const closeThanks = document.querySelector('.popup__close_thanks');
+const closeReset = document.querySelector('.popup__close_reset');
+const closeRec = document.querySelector('.popup__close_recovery');
 // Открытие мобильного меню
 
 burgerButton.addEventListener('click', () => {
@@ -27,7 +28,7 @@ main.addEventListener('click', () => {
 
 // Открытие формы спасибо
 
-const popupThanks = new Popup(thanksPopup, popupCloseReg);
+const popupThanks = new Popup(thanksPopup, closeThanks);
 
 confirmButton.addEventListener('click', (event) => {
     event.preventDefault();
@@ -37,7 +38,7 @@ confirmButton.addEventListener('click', (event) => {
 
 // Открытие восстановления пароля
 
-const popupRec = new Popup(modalRec, popupCloseReg);
+const popupRec = new Popup(modalRec, closeRec);
 
 popupLink.addEventListener('click', () => {
     popupLk.close();
@@ -46,7 +47,7 @@ popupLink.addEventListener('click', () => {
 });
 
 // Пароль восстановлен
-const popupReset = new Popup(modalReset, popupCloseReg);
+const popupReset = new Popup(modalReset, closeReset);
 
 recButton.addEventListener('click', (event) => {
     event.preventDefault();
