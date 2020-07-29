@@ -26,7 +26,7 @@
                         </a>
                     </li>
                     <li class="burger-menu__element">
-                        <a class="nav-bar__link nav-bar__link_mini" href="#">Начать работу</a>
+                        <a class="nav-bar__link nav-bar__link_mini nav-bar__link_start" href="#">Начать работу</a>
                     </li>
                     <li class="burger-menu__element">
                         <a class="nav-bar__link nav-bar__link_mini nav-bar__link_lk" href="#">Личный кабинет</a>
@@ -222,19 +222,19 @@
                 <h3 class="footer-text-block__title">Продукты</h3>
                 <ul class="footer-text-block__list">
                     <li class="footer-text-block__element">
-                        <a class="footer-text-block__link" href="#">1С: Бухгалтерия предприятия</a>
+                        <a class="footer-text-block__link" href="advantages.html#accounting">1С: Бухгалтерия предприятия</a>
                     </li>
                     <li class="footer-text-block__element">
-                        <a class="footer-text-block__link" href="#">1С: Зарплата и управление персоналом</a>
+                        <a class="footer-text-block__link" href="advantages.html#salary">1С: Зарплата и управление персоналом</a>
                     </li>
                     <li class="footer-text-block__element">
-                        <a class="footer-text-block__link" href="#">1С: Управление торговлей</a>
+                        <a class="footer-text-block__link" href="advantages.html#trading">1С: Управление торговлей</a>
                     </li>
                     <li class="footer-text-block__element">
-                        <a class="footer-text-block__link" href="#">1С: Управление нашей фирмой</a>
+                        <a class="footer-text-block__link" href="advantages.html#firm">1С: Управление нашей фирмой</a>
                     </li>
                     <li class="footer-text-block__element">
-                        <a class="footer-text-block__link" href="#">1С: Садовод</a>
+                        <a class="footer-text-block__link" href="advantages.html#garden">1С: Садовод</a>
                     </li>
                 </ul>
             </div>
@@ -343,6 +343,42 @@
             <h2 class="popup__title popup__title_reset">Пароль сброшен</h2>
             <p class="popup__under-text popup__under-text_reset">
                 На ваш e-mail мы отправили данные для восстановления пароля
+            </p>
+        </div>
+    </div>
+    <div class="modal modal_question">
+        <div class="popup popup_question">
+            <span class="popup__close popup__close_question"></span>
+            <h2 class="popup__title popup__title_question">Задать вопрос</h2>
+            <form class="popup__form popup__form_question">
+                <label class="popup__label popup__label_question">
+                    Тема вопроса?*
+                    <input class="popup__input popup__input_question">
+                </label>
+                <label type="d" class="popup__label popup__label_question">
+                    Ваш вопрос*
+                    <textarea class="popup__input popup__input_large"></textarea>
+                </label>
+                <label class="popup__label popup__label_question">
+                    Ваш e-mail*
+                    <input class="popup__input popup__input_question">
+                </label>
+                <p class="popup__under-text popup__under-text_question">
+                    Нажимая кнопку “Отправить” вы даёте согласие на обработку персональных данных в соответствии с
+                    <a href="policy.html" class="popup__under-text popup__under-text_question">
+                        Политикой конфиденциальности
+                    </a>
+                </p>
+                <button class="popup__button popup__button_question">Отправить вопрос</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal modal_thanks modal_thanks-question">
+        <div class="popup popup_thanks">
+            <span class="popup__close popup__close_thanks-question"></span>
+            <h2 class="popup__title popup__title_thanks">Спасибо за ваш вопрос!</h2>
+            <p class="popup__under-text popup__under-text_thanks popup__under-text_question">
+                Наша техническая поддержка ответит вам в течение (указать время)
             </p>
         </div>
     </div>

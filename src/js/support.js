@@ -28,6 +28,7 @@ const modalQue = document.querySelector('.modal_question');
 const closeQue = document.querySelector('.popup__close_question');
 const modalThanksQue = document.querySelector('.modal_thanks-question');
 const confirmQue = document.querySelector('.popup__button_question');
+
 // Открытие личного кабинета
 const popupLk = new Popup(modalLk, popupCloseLk);
 
@@ -45,6 +46,10 @@ lkLink.addEventListener('click', () => {
 // Открытие регистрации
 const popupReg = new Popup(modalReg, popupCloseReg);
 
+const lkStart = document.querySelector('.nav-bar__link_start');
+lkStart.addEventListener('click', () => {
+    popupReg.open()
+});
 startWorkButton.addEventListener('click', () => {
     popupReg.open();
 
@@ -97,7 +102,9 @@ getSupport.addEventListener('click', () => {
     popupQuestion.open();
 });
 
-const popupThanksQuestion = new Popup(modalThanksQue, closeQue);
+const closeThanksQue = document.querySelector('.popup__close_thanks-question');
+
+const popupThanksQuestion = new Popup(modalThanksQue, closeThanksQue);
 
 confirmQue.addEventListener('click', (event) => {
    event.preventDefault();

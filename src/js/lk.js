@@ -118,8 +118,8 @@ accordion(nextPanel, "price-active");
 
  const saveNew = document.querySelector('.popup__button_new-employee');
  const modalSuccessNew = document.querySelector('.modal_new-success');
-
- const popupNewSuccess = new Popup(modalSuccessNew, closeNew);
+ const closeNewSuccess = document.querySelector('.popup__close_new-success');
+ const popupNewSuccess = new Popup(modalSuccessNew, closeNewSuccess);
 
  saveNew.addEventListener('click', (event) => {
      event.preventDefault();

@@ -39,6 +39,10 @@ lkLink.addEventListener('click', () => {
 // Открытие регистрации
 const popupReg = new Popup(modalReg, popupCloseReg);
 
+const lkStart = document.querySelector('.nav-bar__link_start');
+lkStart.addEventListener('click', () => {
+    popupReg.open()
+});
 startWorkButton.addEventListener('click', () => {
     popupReg.open();
 
@@ -81,4 +85,28 @@ recButton.addEventListener('click', (event) => {
     event.preventDefault();
     popupReset.open();
     popupRec.close();
+});
+// Поддержка
+const getSupport = document.querySelector('.instructions__button');
+const modalQue = document.querySelector('.modal_question');
+const closeQue = document.querySelector('.popup__close_question');
+const modalThanksQue = document.querySelector('.modal_thanks-question');
+const confirmQue = document.querySelector('.popup__button_question');
+
+// Задать вопрос // поддержка
+
+const popupQuestion = new Popup(modalQue, closeQue);
+
+getSupport.addEventListener('click', () => {
+    popupQuestion.open();
+});
+
+const closeThanksQue = document.querySelector('.popup__close_thanks-question');
+
+const popupThanksQuestion = new Popup(modalThanksQue, closeThanksQue);
+
+confirmQue.addEventListener('click', (event) => {
+    event.preventDefault();
+    popupThanksQuestion.open();
+    popupQuestion.close();
 });

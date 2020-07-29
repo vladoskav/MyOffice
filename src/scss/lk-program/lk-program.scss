@@ -123,6 +123,29 @@
     }
   }
 }
+@media screen and (max-width: 690px) {
+  .lk-program {
+    &__element {
+      width: initial;
+      &_hide {
+        display: none;
+      }
+    }
+    &__row {
+      justify-content: center;
+    }
+    &__title-element {
+      width: initial;
+      margin: 0 auto;
+      &_hide {
+        display: none;
+      }
+    }
+    &__clients-button {
+      align-self: center;
+    }
+  }
+}
 @media screen and (max-width: 425px) {
   .lk-program {
     &__wrapper {

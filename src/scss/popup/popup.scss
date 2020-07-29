@@ -268,6 +268,18 @@
     }
   }
 }
+@media screen and (max-width: 500px) {
+  .popup {
+    &__button-container {
+      flex-direction: column;
+    }
+    &__button {
+      &_delete-employee {
+        margin: 0 0 18px 0;
+      }
+    }
+  }
+}
 @media screen and (max-width: 460px) {
   .popup {
     padding: 15px;

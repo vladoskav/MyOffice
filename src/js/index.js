@@ -46,7 +46,8 @@ const modalReset = document.querySelector('.modal_reset');
 const closeThanks = document.querySelector('.popup__close_thanks');
 const closeReset = document.querySelector('.popup__close_reset');
 const closeRec = document.querySelector('.popup__close_recovery');
-
+const rentStart = document.querySelector('.rent__try-button');
+const startNow = document.querySelector('.start-work__button');
 // Открытие личного кабинета
 const popupLk = new Popup(modalLk, popupCloseLk);
 
@@ -63,6 +64,20 @@ lkLink.addEventListener('click', () => {
 
 // Открытие регистрации
 const popupReg = new Popup(modalReg, popupCloseReg);
+
+const lkStart = document.querySelector('.nav-bar__link_start');
+
+startNow.addEventListener('click', () => {
+    popupReg.open()
+});
+
+rentStart.addEventListener('click', () => {
+    popupReg.open()
+});
+
+lkStart.addEventListener('click', () => {
+    popupReg.open()
+});
 
 startWorkButton.addEventListener('click', () => {
     popupReg.open();

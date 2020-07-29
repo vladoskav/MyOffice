@@ -40,6 +40,10 @@ lkLink.addEventListener('click', () => {
 // Открытие регистрации
 const popupReg = new Popup(modalReg, popupCloseReg);
 
+const lkStart = document.querySelector('.nav-bar__link_start');
+lkStart.addEventListener('click', () => {
+    popupReg.open()
+});
 startWorkButton.addEventListener('click', () => {
     popupReg.open();
 
